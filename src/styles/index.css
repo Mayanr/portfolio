@@ -1,0 +1,125 @@
+/* formatting accross pages */
+body{
+    margin: 0 auto;
+    background-color: #171219;
+    /* background-color: rgb(88, 30, 105); */
+    /* background-image: linear-gradient(to right ,rgb(88, 30, 105), black); */
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 70%;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+/* Navigation */
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    width: 20%;
+}
+
+.navbar ul{
+    padding: 5px 100px;;
+    display: flex;
+    justify-content: space-between;
+    margin:10px;
+}
+
+nav.navbar {
+    /* background-color: rgba(218, 202, 218, 0.3); */
+    background-color: #820263;
+    /* text-align: center; */
+    position: fixed;
+    top:0;
+    min-width: 100%;
+    border-bottom: 3px solid white;
+    z-index: 1;
+}
+a.navItem {
+    padding: 5px 50px;;
+    text-decoration: none;
+    color: white;
+    font-family: Federo; 
+}
+
+.navItem:hover {
+    color:  #FB8B24;
+    letter-spacing: 8px;
+    font-style: italic;
+    /* background-color: black; */
+}
+
+.navItem:active {
+    font-weight: bold;
+    color: black;
+}
+
+
+/* section styling */
+
+p {
+    color: white;
+}
+
+h1 { 
+    font-family: Federo; 
+    font-size: 24px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 26.4px;
+    color: white; 
+} 
+
+.section {
+    padding: 5%;
+    margin: 20% 0;
+    /* background-color: rgb(228, 175, 228, 0.3); */
+    /* background-image: linear-gradient(to bottom , rgb(228, 175, 228, 0.3),rgb(88, 30, 105)); */
+    background-image: linear-gradient(to bottom ,#FB8B24, #820263, #171219, #171219);
+    border-radius: 5px;
+    width: 100%;
+    min-height: 350px;
+  
+}
+
+.section:hover{
+    /* padding: 1% 5% 5% 2%; */
+}
+
+.section:hover p{
+    /* font-size: 20px; */
+    display: inline-block;
+    width: 90%;
+    vertical-align: top;
+}
+
+.section:hover h1 {
+    -webkit-transform: rotate(-90deg);
+    -ff-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    display: inline-block;
+    width: 2%;
+    vertical-align: top;
+    font-size: 210%;
+    position: relative;
+    top: 15px;
+    right: 2%;
+    transition: .5s ease;
+}
+
+
+/* .innerBox:hover{
+    background-color: black;
+    
+} */
+
