@@ -16,10 +16,13 @@ class IndexPage extends Component {
         return (
             <Layout>
             <div id="mainTitle">
-                <p>Hello, my name is</p>
+                <p style={{fontSize: 20+"px"}}>Hello! My name is</p>
                 <h1>Mayan Rothstein</h1> 
-                <h2>I build intuitive & function digital experiences</h2> 
-                <p>I'm a full-stack software developer based in Los Angeles, CA specializing in......alkjaeio;gekjtnk3wugoakvj</p> 
+                <h2>I build intuitive & function digital experiences</h2>
+                    <br/> 
+                <p id="oneLineBio">I'm a full-stack software developer based in Los Angeles, CA specializing in......alkja eio ;ge kjtn k3wug oakvj</p> 
+                    <br/>
+                <button>Let's Chat >></button>
             </div>
 
             <div id="introsection" className="section" >
