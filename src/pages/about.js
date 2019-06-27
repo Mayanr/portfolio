@@ -5,9 +5,21 @@ import Layout from "../components/layout"
 const About = () => {
     return (
         <div>
-            <h1>About</h1>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras cursus lectus vitae nulla pharetra tempus. Quisque ultrices ipsum sed mauris congue, a luctus eros commodo. Vivamus eget orci urna. Sed pellentesque feugiat rhoncus. Duis eu tristique urna, ut dapibus justo. Aenean sed lorem in turpis suscipit tincidunt. In massa sem, malesuada ornare scelerisque in, volutpat vel ante. Phasellus consequat sodales vehicula. Etiam ac dolor et orci malesuada rhoncus sed et magna. Cras vel nisi sit amet tellus vulputate varius non luctus neque. In ut quam purus. In pulvinar nisl et ipsum commodo, eu efficitur orci dapibus. Duis pharetra, turpis id mollis volutpat, lectus dui lacinia enim, a ullamcorper massa felis vitae libero. Duis interdum ligula vitae suscipit tincidunt. Fusce quis massa lorem. Vivamus erat lectus, congue at eros quis, malesuada dignissim tellus. Suspendisse mollis tincidunt nisi, ac euismod metus varius cursus. Ut at nisl sit amet massa finibus auctor. Cras viverra placerat imperdiet. Nunc ante lectus, pretium sed nunc eget, condimentum facilisis nisi. Duis aliquet fermentum lacus, sit amet maximus diam eleifend eu. Pellentesque nec lectus augue. Quisque imperdiet rhoncus quam a tempus.</p>
-        </div>
+           <h1>About</h1>
+            <p>
+            Hello! My name is Mayan. I am a full-stack developer in Los Angeles, CA
+            Donec in sapien nunc. Ut placerat, magna sit amet bibendum eleifend, nunc elit viverra lorem, ornare tincidunt elit leo id leo. Nam augue sem, aliquet in tortor vel, faucibus lacinia sapien. In id mollis magna. Aliquam gravida eu lacus vel molestie. Integer ut scelerisque leo, vitae cursus ex. Cras et purus vulputate, tincidunt neque non, pretium justo. Integer convallis mi at turpis elementum, vel mollis leo luctus. Vestibulum fermentum mattis nisl, sit amet elementum massa porttitor gravida. Morbi pretium bibendum augue, id mollis odio scelerisque at. Aliquam rutrum felis urna, in blandit dui vehicula vitae. Maecenas auctor tempor arcu, ut rutrum ex volutpat id. In condimentum vulputate nisi id vestibulum. Fusce justo lectus, placerat porttitor blandit sit amet, tempor nec sapien. Fusce vitae orci eros.
+            <ul>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>React</li>
+                <li>Angular</li>
+
+            </ul>
+            </p>
+
+
+            </div>
     )
 }
 export default About

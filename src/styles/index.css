@@ -5,7 +5,7 @@
 body{
     margin: 0 auto;
     background-color: #171219;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     /* background-color: rgb(88, 30, 105); */
     /* background-image: linear-gradient(to right ,rgb(88, 30, 105), black); */
 }
@@ -71,7 +71,7 @@ a.navItem {
 .navbar .icon {
     display: none;
     color: white;
-    padding: 8px;
+    padding: 8.5px;
     background-color:#820263;
 }
 
@@ -112,7 +112,21 @@ a.navItem {
        background-color:rgba(23, 18, 25, 0.3);
        letter-spacing: 8px; 
         transition: 0.5s ease;
-      }
+    }
+
+    .section div p, .section div .content {
+        display: block;
+        width: 100%;
+    }
+
+    .section div h1 {
+        transform: none;
+        display: block;
+        -webkit-transform: none;
+        -ff-transform: none;
+        width: 100%;
+        position: static;
+    }
 
 }
 
@@ -122,53 +136,42 @@ p {
     color: white;
 }
 
-h1 { 
-    font-family: Federo; 
-    font-size: 24px; 
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight: 700; 
-    /* line-height: 26.4px; */
-    color: white; 
-    letter-spacing: 8px;
-} 
-
 .section {
     padding: 5%;
     margin: 8% 0;
-    /* background-color: rgb(228, 175, 228, 0.3); */
-    /* background-image: linear-gradient(to bottom , rgb(228, 175, 228, 0.3),rgb(88, 30, 105)); */
     background-image: linear-gradient(to bottom ,#FB8B24, #820263, #171219, #171219);
     border-radius: 5px;
-    /* width: 100%; */
     min-height: 100vh;
 }
 
-.section p{
-    vertical-align: bottom;
-}
 
 
-.section:hover p{
-    transition-delay: 1s;
+.section p, .content{
     display: inline-block;
     width: 90%;
     vertical-align: top;
 }
 
-.section:hover h1 {
+.section h1 {
     -webkit-transform: rotate(-90deg);
     -ff-transform: rotate(-90deg);
     transform: rotate(-90deg);
     display: inline-block;
     width: 5%;
-    vertical-align: top;
+    /* vertical-align: center; */
     font-size: 210%;
     position: relative;
     top: 30px;
     right: 2%;
-    transition: .5s ease;
-    letter-spacing: 1px;
+    /* transition: .5s ease; */
+    /* letter-spacing: 1px; */
+    color: white; 
+    letter-spacing: 8px;
+    font-family: Federo; 
+    /* font-size: 24px;  */
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
 }
 
 /* header section formatting */
@@ -182,6 +185,12 @@ h1 {
 
 #mainTitle h1{
     font-size: 75px;
+    margin: 10px 0;
+    font-family: Federo; 
+    font-weight: 700; 
+    font-style: normal; 
+    font-variant: normal;
+    color: white;
 }
 
 #mainTitle h2 {
@@ -203,29 +212,43 @@ h1 {
 
 footer {
     font-family: Federo;
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 5px; 
     word-spacing: 7px;
     text-align: center;
 }
 
-button {
+button{
     padding: 1.5%;
-    background-color: #820263;
+    background: none;
     color: white;
     font-family: Federo;
     border: none;
     border-radius: 10px;
-    font-size: 15px;
+    font-size: 17px;
     letter-spacing: 2px; 
     word-spacing: 4px;
     text-align: center;
-    margin: 5% 0;
-    border: 2px solid #171219;
+    margin: 3% 0;
+    border:  2px solid white;
+}
+
+button.purple {
+    background-color: #820263;
+    border: 2px solid rgb(255, 255, 255, 0)
 }
 
 button:hover {
     border: 2px solid white;
     letter-spacing: 4px; 
     transition: 0.75s ease;
+}
+
+/* form styling */
+form input {
+    margin-bottom: 20px;
+}
+
+form, input, textarea {
+    max-width: 100%;
 }

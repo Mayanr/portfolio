@@ -23,13 +23,13 @@ const Header = () => {
                     <i className="fa fa-bars"></i>
                 </a>
                 <ul>
-                    <li><AnchorLink href="#introsection" className="navItem">About</AnchorLink></li>
+                    <li><AnchorLink href="#aboutsection" className="navItem">About</AnchorLink></li>
                     {/* <li><a  className="navItem" href="/#introsection">Intro</a></li> */}
 
-                    <li><AnchorLink href="#blogsection"  className="navItem">Blog</AnchorLink></li>
+                    <li><AnchorLink href="#projects_section"  className="navItem">Projects</AnchorLink></li>
                     {/* <li><a  className="navItem" href="/#blogsection">Blog</a></li> */}
 
-                    <li><AnchorLink  href="#aboutsection" className="navItem">About</AnchorLink></li>
+                    <li><AnchorLink  href="#introsection" className="navItem">Intro</AnchorLink></li>
                     {/* <li><a  className="navItem" href="/#aboutsection">About</a></li> */}
 
                     <li><AnchorLink  href="#contactsection" className="navItem">Contact</AnchorLink></li>
