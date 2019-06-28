@@ -6,8 +6,8 @@ const Contact = () => {
     return (
         <div>
             <h1>Contact</h1>
-            <div className="content">
-                <form method="POST" action="https://formspree.io/arothstein90@gmail.com">
+            <div className="main">
+                <form method="POST" action="https://formspree.io/arothstein90@gmail.com" target="_blank">
                 <input type="text" name="name" placeholder="Name" size="50"/>
                 <br/>
                 <input type="email" name="email" placeholder="Email" size="50"/>

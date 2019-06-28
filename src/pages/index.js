@@ -6,12 +6,14 @@ import About from "./about";
 import Contact from "./contact";
 import Intro from "./intro";
 
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 class IndexPage extends Component {
 
     render(){
         return (
             <Layout>
+
             <div id="mainTitle">
                 <p style={{fontSize: 20+"px"}}>Hello! My name is</p>
                 <h1>Mayan Rothstein</h1> 
@@ -19,24 +21,33 @@ class IndexPage extends Component {
                     <br/> 
                 <p id="oneLineBio">I'm a full-stack software developer based in Los Angeles, CA specializing in......alkja eio ;ge kjtn k3wug oakvj</p> 
                     <br/>
-                <button className="purple">Let's Chat >></button>
+                <button ><AnchorLink  id="chatLink" href="#contactsection">Let's Chat >></AnchorLink></button>
             </div>
 
             <div id="aboutsection" className="section" >
-                    <About /> 
+                <div className= "newSec">
+                    <About />
+                </div> 
             </div>  
 
             <div id="projects_section" className="section">
+             <div className= "newSec">
                 <Projects className="innerBox"/> 
+            </div>
             </div>  
 
             <div id="introsection" className="section">
-                <Intro className="innerBox"/> 
+                <div className= "newSec">
+                    <Intro className="innerBox"/>
+                </div>
             </div>      
 
             <div id="contactsection" className="section">
-                <Contact className="innerBox"/> 
-            </div>                
+                <div className= "newSec">
+                    <Contact className="innerBox"/>
+                </div> 
+            </div>    
+
             </Layout>
         )
     }
