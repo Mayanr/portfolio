@@ -8,7 +8,12 @@ class TVShows extends Component {
             <div className="main">
             
                 <div className = "projectContent">
-                    <h2>TV Show Search</h2>
+                    <div className="projectTitle">
+                        <h2>TV Show Search </h2>
+                        {/* Links (github and  site link) */}
+                        <a href="https://github.com/Mayanr/tvShows" target="_blank"><img alt="Github Link" src="https://i.dlpng.com/static/png/4033807_preview.png" width="20px" /></a>
+                        <a href="https://mayanr.github.io/tvShows/shows" target="_blank"><img alt="Link to 'What Will You Binge Next?'" src="https://static.thenounproject.com/png/972169-200.png" width="15px" /></a>
+                    </div>
                     <ul >
                         {/* Description:  */}
                         <li>Leveraging TV Maze's API, this site presents a vast collection of television shows and a filter that enables users to quickly discover shows that meet their TV-binging desires.</li>
@@ -27,10 +32,14 @@ class TVShows extends Component {
 
                         <br />
                         {/* Technologies */}
-                        <li>
-                            <img />
+                        <li className="techLogos">
+                            <img alt="node.js" src="https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png"  height="25px"/>
+                            <img alt="Angular" src="https://angular.io/assets/images/logos/angular/angular.png" height="35px"/>
+                            <img alt="TV Maze API" src="https://static.tvmaze.com/images/api/tvm_api.png"  height="25px"/>
                         </li>
                     </ul>
+
+                    
                 </div>
 
                 <a className="projectLink" href="https://mayanr.github.io/tvShows/shows" target="_blank">
