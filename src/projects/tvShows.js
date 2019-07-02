@@ -11,12 +11,12 @@ class TVShows extends Component {
                     <div className="projectTitle">
                         <h2>TV Show Search </h2>
                         {/* Links (github and  site link) */}
-                        <a href="https://github.com/Mayanr/tvShows" target="_blank"><img alt="Github Link" src="https://i.dlpng.com/static/png/4033807_preview.png" width="20px" /></a>
-                        <a href="https://mayanr.github.io/tvShows/shows" target="_blank"><img alt="Link to 'What Will You Binge Next?'" src="https://static.thenounproject.com/png/972169-200.png" width="15px" /></a>
+                        <a href="https://github.com/Mayanr/tvShows" target="_blank"><img alt="https://github.com/Mayanr/tvShows" src="https://image.flaticon.com/icons/svg/25/25231.svg"  height="20px"/></a>
+                        <a href="https://mayanr.github.io/tvShows/shows" target="_blank"><img alt="https://mayanr.github.io/tvShows/shows" src="https://static.thenounproject.com/png/299638-200.png" height="20px"/></a>
                     </div>
                     <ul >
                         {/* Description:  */}
-                        <li>Leveraging TV Maze's API, this site presents a vast collection of television shows and a filter that enables users to quickly discover shows that meet their TV-binging desires.</li>
+                        <li>Leveraging TVmaze's API, this site presents a vast collection of television shows and a filter that enables users to quickly discover shows that meet their TV-binging desires.</li>
 
                         <br />
 
@@ -45,7 +45,7 @@ class TVShows extends Component {
                 <a className="projectLink" href="https://mayanr.github.io/tvShows/shows" target="_blank">
                     <img className = "projectImg" src={require("../media/tvShows_thumbnail.jpg")}/>
                     <div className="clickLink">
-                        <div className="linkText">Search For Shows</div>
+                        <div className="linkText">Search For Shows>></div>
                     </div>
                 </a>
             </div>

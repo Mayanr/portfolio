@@ -8,7 +8,6 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 const Header = () => {
     const navbar = useRef();
     const toggleMenu =()=>{
-        console.log(navbar);
         if (navbar.current.className === "navbar") {
             navbar.current.className += " responsive";
         } else {
@@ -23,6 +22,7 @@ const Header = () => {
                     <i className="fa fa-bars"></i>
                 </a>
                 <ul>
+                    <li><AnchorLink href="#mainTitle" className="navItem"><img alt="logo" src="tbd"/></AnchorLink></li>
                     <li><AnchorLink href="#aboutsection" className="navItem">About</AnchorLink></li>
                     {/* <li><a  className="navItem" href="/#introsection">Intro</a></li> */}
 
