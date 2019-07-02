@@ -275,7 +275,10 @@ div.projectTitle a:hover{
     text-align: right;
     margin: 0;
 }
-
+/* about section */
+#aboutTech {
+    text-align: center;
+}
 /* project section */
 .projectContent {
     display: inline-block;
