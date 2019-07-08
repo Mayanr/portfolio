@@ -5,9 +5,35 @@ import { Link } from "gatsby";
 const Intro = () => {
     return (
         <div>
-         <h1>Intro</h1>
-            <div className="main"> 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras cursus lectus vitae nulla pharetra tempus. Quisque ultrices ipsum sed mauris congue, a luctus eros commodo. Vivamus eget orci urna. Sed pellentesque feugiat rhoncus. Duis eu tristique urna, ut dapibus justo. Aenean sed lorem in turpis suscipit tincidunt. In massa sem, malesuada ornare scelerisque in, volutpat vel ante. Phasellus consequat sodales vehicula. Etiam ac dolor et orci malesuada rhoncus sed et magna. Cras vel nisi sit amet tellus vulputate varius non luctus neque. In ut quam purus. In pulvinar nisl et ipsum commodo, eu efficitur orci dapibus. Duis pharetra, turpis id mollis volutpat, lectus dui lacinia enim, a ullamcorper massa felis vitae libero. Duis interdum ligula vitae suscipit tincidunt. Fusce quis massa lorem. Vivamus erat lectus, congue at eros quis, malesuada dignissim tellus. Suspendisse mollis tincidunt nisi, ac euismod metus varius cursus. Ut at nisl sit amet massa finibus auctor. Cras viverra placerat imperdiet. Nunc ante lectus, pretium sed nunc eget, condimentum facilisis nisi. Duis aliquet fermentum lacus, sit amet maximus diam eleifend eu. Pellentesque nec lectus augue. Quisque imperdiet rhoncus quam a tempus.
+         <h1>Career</h1>
+            <div className="main">
+            <h2>Professional Experience</h2> 
+             <table>
+                 <tbody>
+                     <tr>
+                        <td>Ticketmaster</td>
+                        <td>B2B Marketing</td>
+                        <td>
+                            Collaborated with Product, Strategy, and Executive staff to research fan data and craft narratives around TM’s tech products & services.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Riversand</td>
+                        <td>Product Marketing</td>
+                        <td>
+                            Created and edited B2B marketing content (e.g., blogs, white papers, personas, ebooks, articles, and decks).
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Princess Cruises</td>
+                        <td>Marketing</td>
+                        <td>
+                            Surveyed, researched, and collaborated cross-functionally to strategize effective tactics for campaign implementation to transform over 60,000 global employees into brand ambassadors.
+                        </td>
+                     </tr>
+                 </tbody>
+             </table>
+            <button id="resume">View Resume >></button>
             </div>
         
             {/* <p> Need a developer? <a href="/contact">Contact Me!</a></p>

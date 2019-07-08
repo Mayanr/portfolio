@@ -5,7 +5,7 @@ import React, { Component} from "react"
 class TVShows extends Component {
     render(){
         return (
-            <div className="main">
+            <div className="main projectMargin">
             
                 <div className = "projectContent">
                     <div className="projectTitle">
@@ -17,8 +17,6 @@ class TVShows extends Component {
                     <ul >
                         {/* Description:  */}
                         <li>Leveraging TVmaze's API, this site presents a vast collection of television shows and a filter that enables users to quickly discover shows that meet their TV-binging desires.</li>
-
-                        <br />
 
                         <li > 
                             <p className="functionalities">Noteable Functionalities:</p>

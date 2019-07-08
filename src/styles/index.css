@@ -245,7 +245,7 @@ div.projectTitle a:hover{
     min-height: 100vh;
 }
 
-.main, .contact_form{
+.main{
     display: inline-block;
     width: 80%;
     margin-top: 10px;
@@ -279,11 +279,51 @@ div.projectTitle a:hover{
 #aboutTech {
     text-align: center;
 }
+
+#bio {
+    display: inline-block;
+    width: 60%;
+    padding-right: 2%;
+}
+
+#porfolioPhoto{
+    vertical-align: top;
+    display: inline-block;
+    width: 28%;
+}
+
+/* responsive view for about section */
+@media screen and (max-width: 1045px){
+    div.main {
+        width: 70%;
+        /* height: 100px; */
+        position: relative;
+        /* color: white; */
+        font-weight: bold;
+    }
+    .projectContent, .projectLink{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .projectImg {
+        opacity: 0.2;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 38px;
+    }
+    .projectContent{
+    z-index: 1;
+    }
+}
+
 /* project section */
 .projectContent {
     display: inline-block;
     vertical-align: top;
-    width: 35%;
+    width: 40%;
 }
 
 .projectContent ul {
@@ -291,13 +331,14 @@ div.projectTitle a:hover{
     background-color:rgb(152, 140, 183, 0.5);
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 
 }
 
 .projectImg {
     display: inline-block;
     vertical-align: top;
-    width: 63%;
+    width: 58%;
 }
 
 ol {
@@ -320,13 +361,21 @@ div.projectContent li.techLogos{
     text-align: center;
     display: table;
     width: 100%;
-    /* vertical-align: center; */
 }
 
 li.techLogos img {
     vertical-align: middle;
     padding: 2%;
-    /* display: table-cell; */
+}
+
+.projectComponent {
+    min-height: 430px;
+    margin: 20px 0;
+}
+
+.italicize{
+    font-style: italic;
+    font-size: 12px;
 }
 
 /* hover-over site screenshot effects */
@@ -356,8 +405,11 @@ a.projectLink:hover .clickLink{
     opacity: 1;
 }
 
+.projectMargin {
+    margin-left: 180px;
+}
 /* responsive view for project section */
-@media screen and (max-width: 1045px){
+@media screen and (max-width: 1100px){
     div.main {
         width: 70%;
         /* height: 100px; */
@@ -434,7 +486,29 @@ a.projectLink:hover .clickLink{
     div.projectTitle h2 {
         display: block;
     }
+    .projectMargin {
+        margin-left: 0;
+    }
 }
+
+/* Career section */
+
+/* contact section */
+#contactInfo {
+    display: inline-block;
+    width: 30%;
+    background-color:rgb(152, 140, 183, 0.5);
+    vertical-align: top;
+    margin-left: 1%;
+    padding: 1%;
+}
+
+#contactForm {
+    display: inline-block;
+    width: 60%;
+    margin:0;
+}
+
 
 footer {
     font-family: Federo;

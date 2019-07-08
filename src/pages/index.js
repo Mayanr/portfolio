@@ -19,7 +19,9 @@ class IndexPage extends Component {
                 <h1>Mayan Rothstein</h1> 
                 <h2>I build intuitive & function digital experiences</h2>
                     <br/> 
-                <p id="oneLineBio">full-stack developer based in Los Angeles, CA</p> 
+                <p id="oneLineBio">
+                    full_stack_developer_in_los_angeles_ca
+                </p> 
                     <br/>
                 <button ><AnchorLink  id="chatLink" href="#contactsection">Let's Chat >></AnchorLink></button>
             </div>
