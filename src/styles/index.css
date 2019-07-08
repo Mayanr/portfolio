@@ -192,6 +192,13 @@ a.navItem {
     width: 30%;
 }
 
+@media screen and (max-width: 800px) {
+    #mainTitle p#oneLineBio{
+        width: 90%;
+        display: block;
+        margin-right: 0;
+    }
+}
 /* section styling */
 h2 {
     color: #988CB7; 
@@ -286,36 +293,21 @@ div.projectTitle a:hover{
     padding-right: 2%;
 }
 
-#porfolioPhoto{
+div#porfolioPhoto{
     vertical-align: top;
     display: inline-block;
-    width: 28%;
+    width: 25%;
 }
 
 /* responsive view for about section */
 @media screen and (max-width: 1045px){
-    div.main {
-        width: 70%;
-        /* height: 100px; */
-        position: relative;
-        /* color: white; */
-        font-weight: bold;
-    }
-    .projectContent, .projectLink{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-    .projectImg {
-        opacity: 0.2;
-        width: 100%;
+    #bio, #portfolioPhoto {
+        display: block;
         margin: 0 auto;
-        margin-top: 38px;
     }
-    .projectContent{
-    z-index: 1;
+    #portfolioPhoto {
+        /* text-align: center; */
+        height: 15%;
     }
 }
 
@@ -323,11 +315,11 @@ div.projectTitle a:hover{
 .projectContent {
     display: inline-block;
     vertical-align: top;
-    width: 40%;
+    width: 45%;
 }
 
 .projectContent ul {
-    padding: 15px;
+    padding: 4%;
     background-color:rgb(152, 140, 183, 0.5);
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
@@ -338,7 +330,7 @@ div.projectTitle a:hover{
 .projectImg {
     display: inline-block;
     vertical-align: top;
-    width: 58%;
+    width: 53%;
 }
 
 ol {
@@ -355,6 +347,7 @@ ol li{
     padding: 2px 0;
     list-style: none;
     padding-left: -20px;
+    margin-bottom: 0;
 }
 
 div.projectContent li.techLogos{
@@ -370,12 +363,17 @@ li.techLogos img {
 
 .projectComponent {
     min-height: 430px;
-    margin: 20px 0;
+    margin: 8% 0;
 }
 
 .italicize{
     font-style: italic;
-    font-size: 12px;
+    font-size: 10px;
+    margin-bottom: 0;
+}
+
+.section div.newSec {
+    margin-bottom: 3%;
 }
 
 /* hover-over site screenshot effects */
@@ -409,7 +407,7 @@ a.projectLink:hover .clickLink{
     margin-left: 180px;
 }
 /* responsive view for project section */
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 1150px){
     div.main {
         width: 70%;
         /* height: 100px; */
@@ -429,16 +427,21 @@ a.projectLink:hover .clickLink{
         width: 100%;
         margin: 0 auto;
         margin-top: 38px;
+        max-height: 370px;
     }
     .projectContent{
-    z-index: 1;
+        z-index: 1;
+        min-height: 780px;
     }
-
     .projectContent ul {
-        padding: 28px;
+        /* padding: 32px; */
+        font-size: 16px;
+        padding: 8%;
         border-radius: 0;
     }
-
+    .functionalities {
+        margin: 2% 0;
+    }
     .section div.newSec {
         padding-bottom: 1%;
         display: block;
@@ -454,7 +457,6 @@ a.projectLink:hover .clickLink{
     .projectImg {
         margin-top: 65px;
     }
-
     .section div h1 {
         transform: none;
         display: block;
@@ -464,17 +466,11 @@ a.projectLink:hover .clickLink{
         position: static;
         text-align: left;
         padding-top: 1%;
-
     }
     .section div.newSec{
-       padding: 5%;
-       margin-top: 10% ;
-       /* text-align: center; */
-    }
-    #mainTitle p#oneLineBio{
-        width: 90%;
-        display: block;
-        margin-right: 0;
+        padding: 5%;
+        margin-top: 10% ;
+        /* text-align: center; */
     }
     div.main {
         width: 100%;
@@ -490,6 +486,25 @@ a.projectLink:hover .clickLink{
         margin-left: 0;
     }
 }
+
+@media screen and (min-width: 1480px){
+    .projectContent ul{
+        font-size: 16px;
+        padding: 7%;
+    }
+    .italicize{
+        font-style: italic;
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+    .functionalities {
+        margin: 4% 0;
+    }
+    h2 {
+        font-size: 30px;
+    }
+}
+
 
 /* Career section */
 

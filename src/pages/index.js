@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react"
+import React, { Component } from "react"
 
 import Layout from "../components/layout";
 import Projects from "./projects";
@@ -33,7 +33,7 @@ class IndexPage extends Component {
             </div>  
 
             <div id="projects_section" className="section">
-             <div className= "newSec">
+             <div className= "newSec" >
                 <Projects className="innerBox"/> 
             </div>
             </div>  

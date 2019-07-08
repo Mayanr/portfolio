@@ -7,8 +7,8 @@ class Ecommerce extends Component {
         return (
             <div className="main projectMargin">
             
-            <a className="projectLink" href="http://3.15.40.71" target="_blank">
-                    <img className = "projectImg" src={require("../media/accessoryStore_thumbnail.jpg")}/>
+            <a className="projectLink" href="http://3.15.40.71" target="_blank" rel="noopener noreferrer">
+                    <img className = "projectImg" src={require("../media/accessoryStore_thumbnail.jpg")} alt="Site home page screenshot"/>
                     <div className="clickLink">
                         <div className="linkText">Shop For Accessories>></div>
                     </div>
@@ -18,8 +18,8 @@ class Ecommerce extends Component {
                     <div className="projectTitle">
                         <h2>The Accessory Store</h2>
                         {/* Links (github and  site link) */}
-                        <a href="https://github.com/Mayanr/eCommerce" target="_blank"><img alt="https://github.com/Mayanr/eCommerce" src="https://image.flaticon.com/icons/svg/25/25231.svg"  height="20px"/></a>
-                        <a href="http://3.15.40.71" target="_blank"><img alt="http://3.15.40.71" src="https://static.thenounproject.com/png/299638-200.png" height="20px"/></a>
+                        <a href="https://github.com/Mayanr/eCommerce" target="_blank" rel="noopener noreferrer"><img alt="https://github.com/Mayanr/eCommerce" src="https://image.flaticon.com/icons/svg/25/25231.svg"  height="20px"/></a>
+                        <a href="http://3.15.40.71" target="_blank" rel="noopener noreferrer"><img alt="http://3.15.40.71" src="https://static.thenounproject.com/png/299638-200.png" height="20px"/></a>
                     </div>
                     <ul >
                         {/* Description:  */}

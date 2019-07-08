@@ -7,12 +7,12 @@ class TVShows extends Component {
         return (
             <div className="main projectMargin">
             
-                <div className = "projectContent">
+                <div className = "projectContent" >
                     <div className="projectTitle">
                         <h2>TV Show Search </h2>
                         {/* Links (github and  site link) */}
-                        <a href="https://github.com/Mayanr/tvShows" target="_blank"><img alt="https://github.com/Mayanr/tvShows" src="https://image.flaticon.com/icons/svg/25/25231.svg"  height="20px"/></a>
-                        <a href="https://mayanr.github.io/tvShows/shows" target="_blank"><img alt="https://mayanr.github.io/tvShows/shows" src="https://static.thenounproject.com/png/299638-200.png" height="20px"/></a>
+                        <a href="https://github.com/Mayanr/tvShows" target="_blank" rel="noopener noreferrer"><img alt="https://github.com/Mayanr/tvShows" src="https://image.flaticon.com/icons/svg/25/25231.svg"  height="20px"/></a>
+                        <a href="https://mayanr.github.io/tvShows/shows" target="_blank" rel="noopener noreferrer"><img alt="https://mayanr.github.io/tvShows/shows" src="https://static.thenounproject.com/png/299638-200.png" height="20px"/></a>
                     </div>
                     <ul >
                         {/* Description:  */}
@@ -40,8 +40,8 @@ class TVShows extends Component {
                     
                 </div>
 
-                <a className="projectLink" href="https://mayanr.github.io/tvShows/shows" target="_blank">
-                    <img className = "projectImg" src={require("../media/tvShows_thumbnail.jpg")}/>
+                <a className="projectLink" href="https://mayanr.github.io/tvShows/shows" target="_blank" rel="noopener noreferrer">
+                    <img className = "projectImg" src={require("../media/tvShows2_thumbnail.jpg")} alt="Site home page screenshot"/>
                     <div className="clickLink">
                         <div className="linkText">Search For Shows>></div>
                     </div>

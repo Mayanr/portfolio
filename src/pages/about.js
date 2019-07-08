@@ -9,7 +9,7 @@ const About = () => {
             <div id="bio">
                 <h2>Hi and Welcome!</h2>
                 <p>
-                My name is Mayan, and I am a full-stack software developer based in Los Angeles, CA. I enjoy developing efficient, secure back-ends and intuitive, user-friendly front-ends. Building websites, apps, and features that enhance the customer journey excites and motivates me to develop exceptional digital experiences!
+                My name is Mayan, and I am a full-stack software developer based in Los Angeles, CA. I enjoy developing efficient, secure back-ends and intuitive, responsive front-ends. Building websites, apps, and features that enhance the customer journey excites and motivates me to develop exceptional digital experiences!
                 </p>
                 <p>
                 For a number of years, coding was a hobby; however, in March of 2019 I made the decision to diverge from the marketing career path I had been on, and enrolled in a full-time software development immersive program, where I spent over 70 hours each week coding (nearly 1000 hours of coding during a three and a half month period). 
@@ -34,7 +34,11 @@ const About = () => {
                 </li>
                 </ul>
                 </div>
-                <img id="portfolioPhoto" src={require("../media/portfolio_photo.jpg")} height="400px"/>
+
+                <div id="portfolioPhoto">
+                    <img  src={require("../media/portfolio_photo.jpg")} height="200px" alt="Mayan Rothstein"/>
+                </div>
+
             </div>
         </div>
     )
