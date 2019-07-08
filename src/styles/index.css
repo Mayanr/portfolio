@@ -293,6 +293,10 @@ div.projectTitle a:hover{
     padding-right: 2%;
 }
 
+#myPhoto {
+    border-top: 10px solid #988CB7;
+    border-left: 10px solid #988CB7;
+}
 div#porfolioPhoto{
     vertical-align: top;
     display: inline-block;
@@ -362,7 +366,7 @@ li.techLogos img {
 }
 
 .projectComponent {
-    min-height: 430px;
+    min-height: 520px;
     margin: 8% 0;
 }
 
@@ -427,11 +431,10 @@ a.projectLink:hover .clickLink{
         width: 100%;
         margin: 0 auto;
         margin-top: 38px;
-        max-height: 370px;
+        max-height: 368px;
     }
     .projectContent{
         z-index: 1;
-        min-height: 780px;
     }
     .projectContent ul {
         /* padding: 32px; */
@@ -484,6 +487,9 @@ a.projectLink:hover .clickLink{
     }
     .projectMargin {
         margin-left: 0;
+    }
+    .projectContent ul, ol li {
+        font-size: 13px;
     }
 }
 
