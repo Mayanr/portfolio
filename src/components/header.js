@@ -22,17 +22,17 @@ const Header = () => {
                     <i className="fa fa-bars"></i>
                 </a>
                 <ul>
-                    <li><AnchorLink href="#mainTitle" className="navItem"><img alt="logo" src="tbd"/></AnchorLink></li>
-                    <li><AnchorLink href="#aboutsection" className="navItem">About</AnchorLink></li>
+                    <li><AnchorLink href="#mainTitle" className="navItem" onClick={e =>toggleMenu()}><img alt="logo" src="tbd"/></AnchorLink></li>
+                    <li><AnchorLink href="#aboutsection" className="navItem" onClick={e =>toggleMenu()}>About</AnchorLink></li>
                     {/* <li><a  className="navItem" href="/#introsection">Intro</a></li> */}
 
-                    <li><AnchorLink href="#projects_section"  className="navItem">Projects</AnchorLink></li>
+                    <li><AnchorLink href="#projects_section"  className="navItem" onClick={e =>toggleMenu()}>Projects</AnchorLink></li>
                     {/* <li><a  className="navItem" href="/#blogsection">Blog</a></li> */}
 
-                    <li><AnchorLink  href="#introsection" className="navItem">Career</AnchorLink></li>
+                    <li><AnchorLink  href="#introsection" className="navItem" onClick={e =>toggleMenu()}>Career</AnchorLink></li>
                     {/* <li><a  className="navItem" href="/#aboutsection">About</a></li> */}
 
-                    <li><AnchorLink  href="#contactsection" className="navItem">Contact</AnchorLink></li>
+                    <li><AnchorLink  href="#contactsection" className="navItem" onClick={e =>toggleMenu()}>Contact</AnchorLink></li>
                     {/* <li><a  className="navItem" href="/#contactsection">Contact</a></li> */}
 
                     {/* responsive nav menu */}
