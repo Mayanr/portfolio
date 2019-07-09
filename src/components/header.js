@@ -22,7 +22,8 @@ const Header = () => {
                     <i className="fa fa-bars"></i>
                 </a>
                 <ul>
-                    <li><AnchorLink href="#mainTitle" className="navItem" onClick={e =>toggleMenu()}><img alt="logo" src="tbd"/></AnchorLink></li>
+                    <li id="myLogo"><AnchorLink href="#mainTitle" className="navItem"><img id="myLogo_img" alt="MR logo" src={require("../media/myMedia/MR_logo2.png")} height="35"/></AnchorLink></li>
+
                     <li><AnchorLink href="#aboutsection" className="navItem" onClick={e =>toggleMenu()}>About</AnchorLink></li>
                     {/* <li><a  className="navItem" href="/#introsection">Intro</a></li> */}
 

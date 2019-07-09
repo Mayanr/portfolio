@@ -14,7 +14,7 @@ class Ecommerce extends Component {
                     </div>
                 </a>
 
-                <div className = "projectContent">
+                <div className = "projectContent alternateSide">
                     <div className="projectTitle">
                         <h2>The Accessory Store</h2>
                         {/* Links (github and  site link) */}

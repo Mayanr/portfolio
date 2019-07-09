@@ -40,18 +40,28 @@ ul {
     list-style: none;
     /* display: inline-block; */
     width: 15%;
+    height: 35px;
     text-align: center;
+    vertical-align: center;
+}
+
+.navbar li#myLogo {
+    max-height: 35px;
+    max-width: 35px;
+}
+
+.navbar li#myLogo:hover #myLogo_img{
+    opacity: 0.7;
 }
 
 .navbar ul{
-    padding: 5px 15px;
+    padding: 5px 15px 5px 0;
     display: flex;
     justify-content: space-between;
-    margin:10px;
+    margin:8px;
 }
 
 .navbar {
-    /* background-color: rgba(218, 202, 218, 0.3); */
     background-color: #4B2187;
     text-align: center;
     position: fixed;
@@ -66,10 +76,10 @@ a.navItem {
     text-decoration: none;
     color: white;
     font-family: Federo; 
+    vertical-align: center;
 }
 
 .navItem:hover {
-    /* border: 1px solid white; */
     letter-spacing: 8px; 
     transition: 0.5s ease;
 }
@@ -97,10 +107,6 @@ a.navItem {
         top: 0;
         z-index: 10;
     }
-
-    /* #mainNavbar.navbar.responsive{
-        position: sticky;
-    } */
 
     .navbar.responsive ul {
         position: sticky;
@@ -134,28 +140,6 @@ a.navItem {
        letter-spacing: 8px; 
         transition: 0.5s ease;
     }
-
-    /* .section div p, .section div .content {
-        display: block;
-        width: 100%;
-    }
-
-    .section div h1 {
-        transform: none;
-        display: block;
-        -webkit-transform: none;
-        -ff-transform: none;
-        width: 100%;
-        position: static;
-        text-align: left;
-
-    }
-
-    .section div.newSec{
-       padding: 0 5%;
-       margin-top: 1%;
-       border-image: linear-gradient(120deg, #4B2187, #988CB7, #4B2187)3;
-    } */
 
 }
 
@@ -211,7 +195,7 @@ h2 {
     font-weight: 700;
     display: inline-block;
     margin: 0;
-    margin-right: 1%; 
+    margin-right: 1%;
     padding-bottom: 15px;
 }
 
@@ -283,6 +267,7 @@ div.projectTitle a:hover{
     text-align: right;
     margin: 0;
 }
+
 /* about section */
 #aboutTech {
     text-align: center;
@@ -292,36 +277,35 @@ div.projectTitle a:hover{
     width: 60%;
     padding-right: 2%;
 }
-div#porfolioPhoto{
-    width: 25%;
-    vertical-align: top;
+div#portfolioPhoto{
+    max-width: 25%;
     display: inline-block;
 }
-div img#myPhoto:after {
+#myPhoto:after {
     content: "";
-    display: block;
-    margin: 0 auto;
-    width: 50%;
-    padding-top: 5px;
-    border-bottom: 1px solid black;
-    /* border-top: 30px solid #988CB7; */
-    /* border-left: 30px solid #988CB7; */
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 50%; /* Change this to whatever width you want. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-bottom: 10px solid red;
 }
+
+/* responsive view for about section */
+@media screen and (max-width: 1045px){
+    /* #bio, #portfolioPhoto {
+        display: block;
+        margin: 0 auto;
+    } */
+    #portfolioPhoto {
+        /* text-align: center; */
+        height: 15%;
+    }
+}
+
 @media screen and (max-width: 800px){
     p {
         font-size: 15px;
         font-weight: 200;
-    }
-}
-/* responsive view for about section */
-@media screen and (max-width: 1045px){
-    #bio, #portfolioPhoto {
-        display: block;
-        margin: 0 auto;
-    }
-    #portfolioPhoto {
-        /* text-align: center; */
-        height: 15%;
     }
 }
 
@@ -338,7 +322,18 @@ div img#myPhoto:after {
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
     border-bottom-right-radius: 15px;
+}
+.projectMargin {
+    margin-left: 180px;
+}
 
+/* styling for alternating project image-content placement */
+.alternateSide ul{
+    border-top-left-radius: 0;
+    border-top-right-radius: 15px;
+}
+.alternateSide .projectTitle {
+    text-align: right;
 }
 
 .projectImg {
@@ -401,7 +396,6 @@ li.techLogos img {
 a.projectLink:hover .projectImg{
     opacity: 0.3;
 }
-
 .clickLink {
     transition: .5s ease;
     opacity: 0;
@@ -412,14 +406,11 @@ a.projectLink:hover .projectImg{
     -ms-transform: translate(-50%, -50%);
     text-align: center; 
 }
-
 a.projectLink:hover .clickLink{
     opacity: 1;
 }
 
-.projectMargin {
-    margin-left: 180px;
-}
+
 /* responsive view for project section */
 @media screen and (max-width: 1150px){
     div.main {

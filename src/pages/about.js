@@ -36,7 +36,7 @@ const About = () => {
                 </div>
 
                 <div id="portfolioPhoto">
-                    <img  id="myPhoto" src={require("../media/portfolio_photo.jpg")} height="200px" alt="Mayan Rothstein"/>
+                    <img  id="myPhoto" src={require("../media/myMedia/portfolio_photo.jpg")} height="100" alt="Mayan Rothstein"/>
                 </div>
 
             </div>

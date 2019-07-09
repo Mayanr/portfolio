@@ -17,11 +17,11 @@ class IndexPage extends Component {
             <div id="mainTitle">
                 <p style={{fontSize: 20+"px"}}>Hello! My name is</p>
                 <h1>Mayan Rothstein</h1> 
-                <h2>I build intuitive & function digital experiences</h2>
+                <h2>I build intuitive & functional digital experiences</h2>
                     <br/> 
                 <p id="oneLineBio">
-                    full_stack_developer<br/>
-                    <img alt="location pin" src={require("../media/icons/location_pin.png")} height="20" style={{paddingRight: 10+"px"}}/>Los Angeles, CA
+                    <img alt="suitcase" src={require("../media/icons/suitcase.jpg")} height="20" style={{paddingRight: 10+"px"}}/>full_stack_developer<br/>
+                    <img alt="location pin" src={require("../media/icons/location_pin.png")} height="20" style={{paddingRight: 11.5+"px"}}/>Los Angeles, CA
                 </p> 
                     <br/>
                 <button ><AnchorLink  id="chatLink" href="#contactsection">Let's Chat >></AnchorLink></button>
