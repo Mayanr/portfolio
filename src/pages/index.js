@@ -20,7 +20,8 @@ class IndexPage extends Component {
                 <h2>I build intuitive & function digital experiences</h2>
                     <br/> 
                 <p id="oneLineBio">
-                    full_stack_developer_in_los_angeles_ca
+                    full_stack_developer<br/>
+                    <img alt="location pin" src={require("../media/icons/location_pin.png")} height="20" style={{paddingRight: 10+"px"}}/>Los Angeles, CA
                 </p> 
                     <br/>
                 <button ><AnchorLink  id="chatLink" href="#contactsection">Let's Chat >></AnchorLink></button>

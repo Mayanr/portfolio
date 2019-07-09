@@ -44,7 +44,7 @@ class EcomAdmin extends Component {
                 </div>
 
                 <a className="projectLink" href="http://3.15.40.71/admin" target="_blank" rel="noopener noreferrer">
-                    <img className = "projectImg" src={require("../media/accessoryStoreAdmin_thumbnail.jpg")} alt="Site home page screenshot"/>
+                    <img className = "projectImg" src={require("../media/myProjects/accessoryStoreAdmin_thumbnail.jpg")} alt="Site home page screenshot"/>
                     <div className="clickLink">
                         <div className="linkText">Manage Inventory & Orders>></div>
                     </div>

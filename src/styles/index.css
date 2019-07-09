@@ -292,19 +292,20 @@ div.projectTitle a:hover{
     width: 60%;
     padding-right: 2%;
 }
-#myPhoto:after {
+div#porfolioPhoto{
+    width: 25%;
+    vertical-align: top;
+    display: inline-block;
+}
+div img#myPhoto:after {
     content: "";
     display: block;
     margin: 0 auto;
     width: 50%;
     padding-top: 5px;
-    border-top: 30px solid #988CB7;
+    border-bottom: 1px solid black;
+    /* border-top: 30px solid #988CB7; */
     /* border-left: 30px solid #988CB7; */
-}
-div#porfolioPhoto{
-    vertical-align: top;
-    display: inline-block;
-    width: 25%;
 }
 @media screen and (max-width: 800px){
     p {

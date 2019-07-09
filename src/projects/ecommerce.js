@@ -8,7 +8,7 @@ class Ecommerce extends Component {
             <div className="main projectMargin">
             
             <a className="projectLink" href="http://3.15.40.71" target="_blank" rel="noopener noreferrer">
-                    <img className = "projectImg" src={require("../media/accessoryStore_thumbnail.jpg")} alt="Site home page screenshot"/>
+                    <img className = "projectImg" src={require("../media/myProjects/accessoryStore_thumbnail.jpg")} alt="Site home page screenshot"/>
                     <div className="clickLink">
                         <div className="linkText">Shop For Accessories>></div>
                     </div>
