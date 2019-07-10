@@ -11,12 +11,12 @@ class EcomAdmin extends Component {
                     <div className="projectTitle">
                         <h2>Store Admin Site</h2>
                         {/* Links (github and  site link) */}
-                        <a href="https://github.com/Mayanr/eCommerce" target="_blank" rel="noopener noreferrer"><img alt="https://github.com/Mayanr/eCommerce" src="https://image.flaticon.com/icons/svg/25/25231.svg"  height="20px"/></a>
-                        <a href="http://3.15.40.71/admin" target="_blank" rel="noopener noreferrer"><img alt="http://3.15.40.71/admin" src="https://static.thenounproject.com/png/299638-200.png" height="20px"/></a>
+                        <a href="https://github.com/Mayanr/eCommerce" target="_blank" rel="noopener noreferrer"><img alt="https://github.com/Mayanr/eCommerce" src={require("../media/icons/github.svg")}  height="20px"/></a>
+                        <a href="http://3.15.40.71/admin" target="_blank" rel="noopener noreferrer"><img alt="http://3.15.40.71/admin" src={require("../media/icons/new_window.png")} height="20px"/></a>
                     </div>
                     <ul >
                         {/* Description:  */}
-                        <li>Admin access to The Accessory Store (see prior prioject, above) enables users to add, edit, and track inventory. Login with credentials, email: <b>test@outlook.com</b> and password: <b>demo_login</b>.
+                        <li>Admin access to The Accessory Store (see prior project, above) enables users to add, edit, and track inventory. Login with credentials, email: <b>test@outlook.com</b> and password: <b>demo_login</b>.
                         <p className="italicize">Products not actually for sale. Feel free to add/edit products and play around with features.</p></li>
                         
                         <li > 

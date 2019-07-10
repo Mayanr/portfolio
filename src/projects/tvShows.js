@@ -11,8 +11,8 @@ class TVShows extends Component {
                     <div className="projectTitle">
                         <h2>TV Show Search </h2>
                         {/* Links (github and  site link) */}
-                        <a href="https://github.com/Mayanr/tvShows" target="_blank" rel="noopener noreferrer"><img alt="https://github.com/Mayanr/tvShows" src="https://image.flaticon.com/icons/svg/25/25231.svg"  height="20px"/></a>
-                        <a href="https://mayanr.github.io/tvShows/shows" target="_blank" rel="noopener noreferrer"><img alt="https://mayanr.github.io/tvShows/shows" src="https://static.thenounproject.com/png/299638-200.png" height="20px"/></a>
+                        <a href="https://github.com/Mayanr/tvShows" target="_blank" rel="noopener noreferrer"><img alt="https://github.com/Mayanr/tvShows" src={require("../media/icons/github.svg")} height="20px"/></a>
+                        <a href="https://mayanr.github.io/tvShows/shows" target="_blank" rel="noopener noreferrer"><img alt="https://mayanr.github.io/tvShows/shows" src={require("../media/icons/new_window.png")} height="20px"/></a>
                     </div>
                     <ul >
                         {/* Description:  */}
@@ -31,9 +31,9 @@ class TVShows extends Component {
                         <br />
                         {/* Technologies */}
                         <li className="techLogos">
-                            <img alt="node.js" src="https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png"  height="25px"/>
-                            <img alt="Angular" src="https://angular.io/assets/images/logos/angular/angular.png" height="35px"/>
-                            <img alt="TV Maze API" src="https://static.tvmaze.com/images/api/tvm_api.png"  height="25px"/>
+                            <img alt="node.js" src={require("../media/tech_logos/nodejs.png")}  height="25px"/>
+                            <img alt="Angular"  src={require("../media/tech_logos/angular.png")} height="35px"/>
+                            <img alt="TV Maze API" src={require("../media/tech_logos/tvm_api.png")}  height="25px"/>
                         </li>
                     </ul>
 

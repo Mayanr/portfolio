@@ -1,11 +1,21 @@
 import React from "react"
 
 const Contact = () => {
+    const showIframe=()=> {
+        document.getElementById("formIframe").style.visibility="visible";
+        document.getElementById("formIframe").style.height=350+"px";
+        document.getElementById("formIframe").style.width=100+"%";
+    }
+    const iframeStyle ={
+        visibility:"hidden",
+        height: 0
+    }
+
     return (
         <div>
             <h1>Contact</h1>
             <div className="main">
-                <form id="contactForm" method="POST" action="https://formspree.io/arothstein90@gmail.com" target="_blank">
+                <form id="contactForm" method="POST" action="https://formspree.io/arothstein90@gmail.com" target="iframe1">
                 <h2>Let's Talk</h2>
                 <br />
                     <input type="text" name="name" placeholder="Name" size="50"/>
@@ -14,7 +24,9 @@ const Contact = () => {
                     <br/>
                     <textarea name="message" placeholder="Your message" cols="51.5" rows="8"></textarea>
                     <br/>
-                    <button type="submit">Send Message >> </button>
+                    <iframe id="formIframe" name="iframe1" src="target.html" style={iframeStyle}></iframe>
+                    <br/>
+                    <button type="submit" onClick={showIframe}>Send Message >> </button>         
                 </form>
 
                 <div id="contactInfo">
