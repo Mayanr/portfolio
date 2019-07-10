@@ -34,9 +34,7 @@ const Intro = () => {
              </table>
             <button id="resume">View Resume >></button>
             </div>
-        
-            {/* <p> Need a developer? <a href="/contact">Contact Me!</a></p>
-            <p> Need a developer? <Link to="/contact">Contact Me!</Link></p> */}
+
         </div>
     )
 }

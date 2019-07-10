@@ -50,7 +50,7 @@ ul {
     max-width: 35px;
 }
 
-.navbar li#myLogo:hover #myLogo_img{
+.navbar li#myLogo:hover img#myLogo_img{
     opacity: 0.7;
 }
 
@@ -109,7 +109,7 @@ a.navItem {
     }
 
     .navbar.responsive ul {
-        position: sticky;
+        /* position: sticky; */
         display: block; 
         margin: 0; 
         padding : 0;
@@ -127,7 +127,7 @@ a.navItem {
       width: 100%;
       text-align: left;
       padding: 8px;
-      position: sticky;
+      /* position: sticky; */
     }
 
     .navbar.responsive ul li a.navItem {
@@ -276,19 +276,18 @@ div.projectTitle a:hover{
     display: inline-block;
     width: 60%;
     padding-right: 2%;
-}
-#bio{
     font-weight: normal;
 }
 div#portfolioPhoto{
-    max-width: 25%;
+    width: 25%;
     display: inline-block;
     vertical-align: top;
+    text-align: right;
 
     position: relative;
 }
 #myPhoto:before {
-    content: ’’;
+    content:"";
     position: absolute;
     bottom: 0;
     width: 80%;
@@ -299,6 +298,7 @@ div#portfolioPhoto{
 #myPhoto{
     vertical-align: top;
     max-height: 300px;
+    margin: 0 auto;
 }
 
 
@@ -306,7 +306,7 @@ div#portfolioPhoto{
 /* responsive view for about section */
 @media screen and (max-width: 1045px){
     #bio, #portfolioPhoto {
-        /* display: block; */
+        display: block;
         margin: 0 auto;
     }
     #portfolioPhoto {
@@ -314,8 +314,8 @@ div#portfolioPhoto{
         max-height: 100%;
 
         position: relative;
-        top: 10px;
-        right: 10px;
+        top: 40px;
+        left: 10%;
     }
     #myPhoto {
         max-height: 100px;
@@ -488,17 +488,23 @@ a.projectLink:hover .clickLink{
     .projectContent{
         /* width: 100%;
         height: 100%; */
-        position: static;
-    }
-    .projectLink{
+        /* position: static; */
         position: relative;
+        top: 1px;
+    }
+    .projectLink {
+        position: relative;
+        top: 100%;
+    }
+    .clickLink{
+        top: 150px;
     }
     .projectImg {
-        opacity: 0.2;
+        opacity: 1;
         width: 100%;
         margin: 0 auto;
-        margin-top: 38px;
-        max-height: 368px;
+        /* margin-top: 38px;
+        max-height: 368px; */
     }
 
 
@@ -506,9 +512,7 @@ a.projectLink:hover .clickLink{
         display: block;
         width: 100%;
     }
-    .projectImg {
-        margin-top: 65px;
-    }
+
     .section div h1 {
         transform: none;
         display: block;
@@ -521,7 +525,7 @@ a.projectLink:hover .clickLink{
     }
     .section div.newSec{
         padding: 5%;
-        margin-top: 10% ;
+        margin-top: 11% ;
         /* text-align: center; */
     }
     div.main {
