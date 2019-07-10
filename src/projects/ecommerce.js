@@ -5,7 +5,7 @@ import React, { Component} from "react"
 class Ecommerce extends Component {
     render(){
         return (
-            <div className="main projectMargin">
+            <div className="main projectMargin" id="ecomProj">
             
             <a className="projectLink" href="http://3.15.40.71" target="_blank" rel="noopener noreferrer">
                     <img className = "projectImg" src={require("../media/myProjects/accessoryStore_thumbnail.jpg")} alt="Site home page screenshot"/>
@@ -41,7 +41,7 @@ class Ecommerce extends Component {
                         <li className="techLogos">
                             <img alt="Python" src={require("../media/tech_logos/python.png")}  height="40px"/>
                             <img alt="Django" src={require("../media/tech_logos/django.png")}  height="25px"/>
-                            <img alt="SQLite" src={require("../media/tech_logos/sqlite.png")}  height="35px"/>                           <img alt="Jinja" src={require("../media/tech_logos/jinja.png")}  height="30px"/>
+                            <img alt="SQLite" src={require("../media/tech_logos/sqlite.png")}  height="30px"/>                           <img alt="Jinja" src={require("../media/tech_logos/jinja.png")}  height="30px"/>
                         </li>
                     </ul>
 

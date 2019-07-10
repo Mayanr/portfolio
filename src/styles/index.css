@@ -283,17 +283,15 @@ div#portfolioPhoto{
     display: inline-block;
     vertical-align: top;
     text-align: right;
-
-    position: relative;
 }
-#myPhoto:before {
+/* #myPhoto:before {
     content:"";
     position: absolute;
     bottom: 0;
     width: 80%;
-    left: 10%; /*this centers it based on the above width*/
+    left: 10%; 
     border-bottom: 100px solid lightcoral;
-}
+} */
 
 #myPhoto{
     vertical-align: top;
@@ -305,7 +303,7 @@ div#portfolioPhoto{
 
 /* responsive view for about section */
 @media screen and (max-width: 1045px){
-    #bio, #portfolioPhoto {
+    /* #bio, #portfolioPhoto {
         display: block;
         margin: 0 auto;
     }
@@ -319,13 +317,21 @@ div#portfolioPhoto{
     }
     #myPhoto {
         max-height: 100px;
-    }
+    } */
 }
 
 @media screen and (max-width: 800px){
+    #bio {
+        display: block;
+        margin: 0 auto;
+    }
     #bio p {
         font-size: 13px;
         font-weight: 200;
+    }
+    #portfolioPhoto {
+        visibility: hidden;
+        width: 0;
     }
 }
 
@@ -496,9 +502,6 @@ a.projectLink:hover .clickLink{
         position: relative;
         top: 100%;
     }
-    .clickLink{
-        top: 150px;
-    }
     .projectImg {
         opacity: 1;
         width: 100%;
@@ -507,12 +510,41 @@ a.projectLink:hover .clickLink{
         max-height: 368px; */
     }
 
+    /* ecommerce image placement */
+    #ecomProj{
+        position: relative;
+        min-height: 400px;
+    }
+    #ecomProj .projectLink{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        min-height: 250px;
+        min-width: 100%;
+        display: block;
+    }
+    #ecomProj .projectImg{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        min-height: 250px;
+        min-width: 100%;
+        display: block;
+    }
+    #ecomProj .alternateSide{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: block;
+    }
 
     .section div p, .section div .content {
         display: block;
         width: 100%;
     }
-
     .section div h1 {
         transform: none;
         display: block;
