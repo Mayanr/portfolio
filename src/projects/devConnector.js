@@ -35,7 +35,7 @@ class DevConnector extends Component {
                             <ol>
                                 <li>Github API linked, profile page populating with the latest 5 repos for that profile</li>
                                 <li>Gravatar pulls avatar associated with user email</li>
-                                <li>Navigation renders different tabs dependent on whether logged-in</li>
+                                <li>Nav renders differently dependent on whether logged-in</li>
                                 <li>Spinner indicates profiles are loading</li>
                             </ol>
                         </li>
@@ -43,10 +43,10 @@ class DevConnector extends Component {
                         <br />
                         {/* Technologies */}
                         <li className="techLogos">
-                            <img alt="Python" src={require("../media/tech_logos/python.png")}  height="40px"/>
-                            <img alt="Django" src={require("../media/tech_logos/django.png")}  height="25px"/>
-                            <img alt="SQLite" src={require("../media/tech_logos/sqlite.png")}  height="25px"/>
-                            <img alt="Jinja" src={require("../media/tech_logos/jinja.png")}  height="30px"/>
+                            <img alt="React" src={require("../media/tech_logos/react.png")} height="30px"/>
+                            <img alt="Redux" src={require("../media/tech_logos/redux.png")}  height="30px"/>
+                            <img alt="MongoDB" src={require("../media/tech_logos/mongodb.png")} height="50px"/>
+                            <img alt="Github API" src={require("../media/tech_logos/github_api3.png")} title="Github API" height="45px"/>
                         </li>
                     </ul>
 

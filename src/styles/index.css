@@ -269,6 +269,7 @@ div.projectTitle a:hover{
 }
 
 /* about section */
+
 #aboutTech {
     text-align: center;
 }
@@ -279,7 +280,7 @@ div.projectTitle a:hover{
     font-weight: normal;
 }
 div#portfolioPhoto{
-    width: 25%;
+    width: 38%;
     display: inline-block;
     vertical-align: top;
     text-align: right;
@@ -318,6 +319,10 @@ div#portfolioPhoto{
     #myPhoto {
         max-height: 100px;
     } */
+    #myPhoto{
+        vertical-align: top;
+        max-width: 200px;
+    }
 }
 
 @media screen and (max-width: 800px){
@@ -334,6 +339,7 @@ div#portfolioPhoto{
         width: 0;
         height: 0;
     }
+    
 }
 
 /* project section */
