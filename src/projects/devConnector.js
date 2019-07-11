@@ -7,10 +7,11 @@ class DevConnector extends Component {
         return (
             <div className="main projectMargin alternatingProj">
             
-            <a className="projectLink" href="" target="_blank" rel="noopener noreferrer">
+            <a className="projectLink" href="https://github.com/Mayanr/SocialNetwork" target="_blank" rel="noopener noreferrer">
                     <img className = "projectImg" src={require("../media/myProjects/devConnector_thumbnail.jpg")} alt="Site home page screenshot"/>
                     <div className="clickLink">
-                        <div className="linkText">Connect with Developers>></div>
+                        {/* <div className="linkText">Connect with Developers>></div> */}
+                        <div className="linkText">View Code on Github>></div>
                     </div>
                 </a>
 
@@ -23,16 +24,19 @@ class DevConnector extends Component {
                     </div>
                     <ul >
                         {/* Description:  */}
-                        <li>A mock Amazon site with a consumer-facing digital storefront, where shoppers can view and add products to the cart, update item order quantity and place orders. See next project (below) for the back-end admin site to manage inventory and orders.
-                        <p className="italicize">Products not actually for sale. Feel free to place test orders, as they will not be processed.</p></li>
+                        <li>
+                        Coming Soon! Not yet live; Code available in Github.<br/>
+                        A site for programmers to create a profile and connect with others in the field.
+
+                        </li>
                         
                         <li > 
                             <p className="functionalities">Noteable Functionalities:</p>
                             <ol>
-                                <li>"Latest Additions" pulls 3 most recent items added</li>
-                                <li>Shopping cart keeps track of products added</li>
-                                <li>Edit product quantity on cart summary page</li>
-                                <li>Select the checkmark at chechout to populate billing address with shipping address</li>
+                                <li>Github API linked, profile page populating with the latest 5 repos for that profile</li>
+                                <li>Gravatar pulls avatar associated with user email</li>
+                                <li>Navigation renders different tabs dependent on whether logged-in</li>
+                                <li>Spinner indicates profiles are loading</li>
                             </ol>
                         </li>
 

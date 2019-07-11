@@ -399,7 +399,7 @@ li.techLogos img {
 
 .projectComponent {
     min-height: 480px;
-    margin: 10% 0;
+    margin: 15% 0;
 }
 
 .italicize{
@@ -465,7 +465,6 @@ a.projectLink:hover .clickLink{
         z-index: 1;
     }
     .projectContent ul {
-        /* padding: 32px; */
         font-size: 16px;
         padding: 8%;
         border-radius: 0;
@@ -491,6 +490,9 @@ a.projectLink:hover .clickLink{
         position: static;
         /* color: white; */
         font-weight: normal;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     .projectContent{
         /* width: 100%;
@@ -502,21 +504,20 @@ a.projectLink:hover .clickLink{
     .projectLink {
         position: relative;
         top: 100%;
+        display: flex;
     }
     .projectImg {
         opacity: 1;
-        width: 100%;
+        width: 70%;
         margin: 0 auto;
         /* margin-top: 38px;
         max-height: 368px; */
     }
 
     /* ecommerce image placement */
-    .alternatingProj {
-        /* position: relative;
-        min-height: 300px; */
-        display: flex;
-        justify-content: center;
+    div.alternatingProj {
+        /* display: flex;
+        justify-content: center; */
         flex-direction: column-reverse;
     }
 
@@ -550,8 +551,9 @@ a.projectLink:hover .clickLink{
         margin-left: 0;
     }
     .projectContent ul, ol li {
-        font-size: 12px;
+        font-size: 13px;
         background-color: transparent;
+        padding: 0 3% 1%;
     }
 }
 
@@ -576,6 +578,11 @@ a.projectLink:hover .clickLink{
 
 
 /* Career section */
+@media screen and (max-width: 800px){
+    #resume{
+        max-width: 170px;
+    }
+}
 
 /* contact section */
 #contactInfo {
@@ -592,7 +599,22 @@ a.projectLink:hover .clickLink{
     width: 60%;
     margin:0;
 }
-
+@media screen and (max-width: 1150px){
+    .contactComponent{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #contactForm, #contactInfo {
+        display: block;
+        width: 100%;
+    }
+    #contactForm input, #contactForm textarea{
+        width: 100%;
+    }
+    #contactForm iframe {
+        height: 100%;
+    }
+}
 
 footer {
     font-family: Federo;

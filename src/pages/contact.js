@@ -14,7 +14,7 @@ const Contact = () => {
     return (
         <div>
             <h1>Contact</h1>
-            <div className="main">
+            <div className="main contactComponent">
                 <form id="contactForm" method="POST" action="https://formspree.io/arothstein90@gmail.com" target="iframe1">
                 <h2>Let's Talk</h2>
                 <br />

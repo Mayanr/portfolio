@@ -33,9 +33,9 @@ const About = () => {
                     <img alt="Gatsby" src={require("../media/tech_logos/gatsby.png")}  height="20px"/>
                     <img alt="html" src={require("../media/tech_logos/html.png")}  height="30px"/>
                     <img alt="css" src={require("../media/tech_logos/css.png")}  height="35px"/>
-                    <img alt="MySQL" src={require("../media/tech_logos/MySQL.png")}  height="40px"/>
+                    <img alt="MySQL" src={require("../media/tech_logos/MySQL.png")}  height="45px"/>
                     <img alt="SQLite" src={require("../media/tech_logos/sqlite.png")}  height="25px"/>
-                    <img alt="MongoDB" src={require("../media/tech_logos/mongodb.png")}  height="40px"/>
+                    <img alt="MongoDB" src={require("../media/tech_logos/mongodb.png")} height="45px"/>
                     <img alt="Redux" src={require("../media/tech_logos/redux.png")}  height="25px"/>
                 </li>
                 </ul>
