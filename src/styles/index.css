@@ -512,33 +512,14 @@ a.projectLink:hover .clickLink{
 
     /* ecommerce image placement */
     #ecomProj{
-        position: relative;
-        min-height: 400px;
+        /* position: relative;
+        min-height: 300px; */
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
     }
-    #ecomProj .projectLink{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        min-height: 250px;
-        min-width: 100%;
-        display: block;
-    }
-    #ecomProj .projectImg{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        min-height: 250px;
-        min-width: 100%;
-        display: block;
-    }
-    #ecomProj .alternateSide{
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        display: block;
+    .projectComponent {
+        min-height: 700px;
     }
 
     .section div p, .section div .content {

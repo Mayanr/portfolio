@@ -14,7 +14,7 @@ const About = () => {
                 <p>
                 For a number of years, coding was a hobby; however, in March of 2019 I made the decision to diverge from the marketing career path I had been on, and enrolled in a full-time software development immersive program.
                 </p>
-                <p>Throughout this contiuous learning process, my marketing background has merged well with my newfound programming abilitities. It's been especially benfitial in recognizing the importance of UX/UI to further monetize websites/apps and connect with the modern consumer. 
+                <p>Throughout this continuous learning process, my marketing background has merged well with my newfound programming abilities. It's been especially beneficial in recognizing the importance of UX/UI to further monetize websites/apps and connect with the modern consumer. 
                 </p>
                 <p>
                 Some of the technologies I've most recently been working with include:
