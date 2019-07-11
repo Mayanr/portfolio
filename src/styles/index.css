@@ -234,7 +234,7 @@ div.projectTitle a:hover{
     border-style: solid;
     border-image: linear-gradient(140deg, #4B2187, rgb(92, 69, 103, 0.01), rgb(92, 69, 103, 0), rgb(92, 69, 103, 0), #4B2187)3;
     /* height: 70vh; */
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 .main{
@@ -332,6 +332,7 @@ div#portfolioPhoto{
     #portfolioPhoto {
         visibility: hidden;
         width: 0;
+        height: 0;
     }
 }
 
@@ -398,7 +399,7 @@ li.techLogos img {
 
 .projectComponent {
     min-height: 480px;
-    margin: 8% 0;
+    margin: 10% 0;
 }
 
 .italicize{
@@ -475,7 +476,7 @@ a.projectLink:hover .clickLink{
     .section div.newSec {
         padding-bottom: 1%;
         display: block;
-        overflow: auto;
+        /* overflow: auto; */
     }
     div.projectTitle, div.alternateSide div.projectTitle{
         /* height: 65px; */
@@ -485,7 +486,7 @@ a.projectLink:hover .clickLink{
 
 @media screen and (max-width: 800px){
     div.main {
-        width: 70%;
+        width: 100%;
         /* height: 100px; */
         position: static;
         /* color: white; */
@@ -511,15 +512,12 @@ a.projectLink:hover .clickLink{
     }
 
     /* ecommerce image placement */
-    #ecomProj{
+    .alternatingProj {
         /* position: relative;
         min-height: 300px; */
         display: flex;
         justify-content: center;
         flex-direction: column-reverse;
-    }
-    .projectComponent {
-        min-height: 700px;
     }
 
     .section div p, .section div .content {
@@ -541,9 +539,6 @@ a.projectLink:hover .clickLink{
         margin-top: 11% ;
         /* text-align: center; */
     }
-    div.main {
-        width: 100%;
-    }
     div.projectTitle {
         height: 65px;
         /* text-align: center; */
@@ -560,6 +555,7 @@ a.projectLink:hover .clickLink{
     }
 }
 
+/* project section for especially large screens */
 @media screen and (min-width: 1480px){
     .projectContent ul{
         font-size: 16px;

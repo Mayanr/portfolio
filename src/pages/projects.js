@@ -2,6 +2,8 @@ import React from "react";
 import TVShows from "../projects/tvShows";
 import Ecommerce from "../projects/ecommerce";
 import EcomAdmin from "../projects/ecomAdmin";
+import DevConnector from "../projects/DevConnector";
+
 
 const Projects = () => {
     return (
@@ -15,6 +17,9 @@ const Projects = () => {
             </div>
             <div className="projectComponent">
                 <EcomAdmin />
+            </div>
+            <div className="projectComponent">
+                <DevConnector />
             </div>
         </div>
     )
