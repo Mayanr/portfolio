@@ -617,19 +617,35 @@ a.projectLink:hover .clickLink{
 
 /* contact section */
 #contactInfo {
-    display: inline-block;
-    width: 30%;
+    /* display: inline-block; */
+    /* width: 35%; */
     background-color:rgb(152, 140, 183, 0.5);
     vertical-align: top;
     margin-left: 1%;
     padding: 1%;
+    border-radius: 15px;
+    display: flex;
+}
+#contactDetails{
+    max-width: 35%;
+}
+#map {
+    /* display: inline-block; */
+    max-width: 60%;
 }
 
 #contactForm {
-    display: inline-block;
-    width: 60%;
+    /* display: inline-block; */
+    /* width: 50%; */
     margin:0;
 }
+
+#contactForm textarea, #contactForm input{
+    font-family: Jura;
+    /* color: rgb(92, 69, 103, 0.1); */
+}
+
+
 @media screen and (max-width: 1150px){
     .contactComponent{
         flex-direction: column;
