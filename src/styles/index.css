@@ -685,8 +685,14 @@ a.projectLink:hover .clickLink{
 }
 
 /* contact section */
+form input {
+    margin-bottom: 20px;
+}
 
-#contactInfo {
+form, input, textarea {
+    max-width: 100%;
+}
+/* #contactInfo {
     display: inline-block;
     width: 45%;
     background-color:rgb(152, 140, 183, 0.5);
@@ -694,11 +700,11 @@ a.projectLink:hover .clickLink{
     margin-left: 1%;
     padding: 1%;
     border-radius: 15px;
-}
+} */
 
 #contactForm {
     display: inline-block;
-    width: 90%;
+    max-width: 90%;
     margin:0;
 }
 
@@ -709,14 +715,14 @@ a.projectLink:hover .clickLink{
 
 
 @media screen and (max-width: 1150px){
-    .contactComponent{
+    /* .contactComponent{
         flex-direction: column;
         justify-content: center;
     }
     #contactForm, #contactInfo {
         display: block;
         width: 100%;
-    }
+    } */
     #contactForm input, #contactForm textarea{
         width: 100%;
     }
@@ -776,11 +782,4 @@ button:hover {
     -webkit-transition: 0.75s ease;
 }
 
-/* form styling */
-form input {
-    margin-bottom: 20px;
-}
 
-form, input, textarea {
-    max-width: 100%;
-}

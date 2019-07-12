@@ -21,11 +21,11 @@ const Contact = () => {
                 <form id="contactForm" method="POST" action="https://formspree.io/arothstein90@gmail.com" target="iframe1">
                 <h2>Let's Talk</h2>
                 <br />
-                    <input type="text" name="name" placeholder="Name"  size="800" required/>
+                    <input type="text" name="name" placeholder="Name"  size="80" required/>
                     <br/>
-                    <input type="email" name="email" placeholder="Email" size="800"  required/>
+                    <input type="email" name="email" placeholder="Email" size="80"  required/>
                     <br/>
-                    <textarea name="message" placeholder="Your message" cols="800" rows="8" required></textarea>
+                    <textarea name="message" placeholder="Your message" cols="100" rows="8" required></textarea>
                     <br/>
                     <iframe id="formIframe" name="iframe1" src="target.html" style={iframeStyle}></iframe>
                     <br/>
