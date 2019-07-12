@@ -616,27 +616,20 @@ a.projectLink:hover .clickLink{
 }
 
 /* contact section */
+
 #contactInfo {
-    /* display: inline-block; */
-    /* width: 35%; */
+    display: inline-block;
+    width: 45%;
     background-color:rgb(152, 140, 183, 0.5);
     vertical-align: top;
     margin-left: 1%;
     padding: 1%;
     border-radius: 15px;
-    display: flex;
-}
-#contactDetails{
-    max-width: 35%;
-}
-#map {
-    /* display: inline-block; */
-    max-width: 60%;
 }
 
 #contactForm {
-    /* display: inline-block; */
-    /* width: 50%; */
+    display: inline-block;
+    width: 45%;
     margin:0;
 }
 

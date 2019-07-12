@@ -1,6 +1,40 @@
 import React from "react"
+/*global google*/
+
 
 const Contact = () => {
+    // var google = window.google = window.google ? window.google : {}
+
+    // const initMap=()=> {
+    //     const google = window.google = window.google ? window.google : {}
+    //     // The location of Uluru
+    //     var uluru = {lat: -25.344, lng: 131.036};
+    //     // The map, centered at Uluru
+    //     var map = new google.maps.Map(
+    //         document.getElementById('map'), {zoom: 4, center: uluru});
+    //     // The marker, positioned at Uluru
+    //     var marker = new google.maps.Marker({position: uluru, map: map});
+    // }
+    // const OPEN_MAP_URL = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDFx2cLKtSno-E_W0EOPRG4B8G9onzlnlk&callback";
+    // const requestURL = `${OPEN_MAP_URL}=${initMap()}`
+    // const api_address =fetch(requestURL, {mode: "no-cors"});
+    
+    // const initMap =() =>{
+    //     const api_address ="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFx2cLKtSno-E_W0EOPRG4B8G9onzlnlk&callback=initMap"
+    //     let myReq = new Request(api_address);
+
+    //     return fetch(myReq, {mode: "no-cors"})
+    //         .then(function(response) {
+    //         if (!response.ok) {
+    //             throw new Error('HTTP error, status = ' + response.status);
+    //         }
+    //         return response.blob();
+    //         })
+    //         .then(function(response) {
+    //             console.log("success")
+    //         });
+    // }
+    
     const showIframe=( timeout = 5000)=> {
         document.getElementById("formIframe").style.visibility="visible";
         document.getElementById("formIframe").style.height=350+"px";
@@ -10,6 +44,7 @@ const Contact = () => {
         visibility:"hidden",
         height: 0
     }
+
 
     return (
         <div>
@@ -30,14 +65,15 @@ const Contact = () => {
                 </form>
 
                 <div id="contactInfo">
-                    <div id="contactDetails">
+                    {/* <div id="contactDetails"> */}
                         <h3>Mayan Rothstein</h3>
                         <h4>Los Angeles, CA</h4>
                         <h4>mayan@bu.edu</h4>
                         <h4>858-705-5252</h4>
-                    </div>
-
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.27409618435!2d-118.69192387726389!3d34.02016129881687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos+Angeles%2C+CA!5e0!3m2!1sen!2sus!4v1562877271441!5m2!1sen!2sus" width="600" height="450" frameborder="0" style={{border:0}}  allowfullscreen id="map"></iframe>
+                    {/* </div> */}
+                    {/* <iframe height="470px" width="100%" frameBorder="0" scrolling="no" src={api_address} allowFullScreen=""></iframe> */}
+                   
+                
                 </div>
 
             </div>

@@ -14,6 +14,9 @@ const Header = () => {
             navbar.current.className = "navbar";
         }
     }
+    const closeMenu = () => {
+        navbar.current.className = "navbar";
+    }
 
     return (
         <header>
@@ -24,16 +27,16 @@ const Header = () => {
                 <ul>
                     <li id="myLogo"><AnchorLink href="#mainTitle" className="navItem"><img id="myLogo_img" alt="MR logo" src={require("../media/myMedia/MR_logo2.png")} height="35"/></AnchorLink></li>
 
-                    <li><AnchorLink href="#aboutsection" className="navItem" onClick={e =>toggleMenu()}>About</AnchorLink></li>
+                    <li><AnchorLink href="#aboutsection" className="navItem" onClick={e =>closeMenu()}>About</AnchorLink></li>
                     {/* <li><a  className="navItem" href="/#introsection">Intro</a></li> */}
 
-                    <li><AnchorLink href="#projects_section"  className="navItem" onClick={e =>toggleMenu()}>Projects</AnchorLink></li>
+                    <li><AnchorLink href="#projects_section"  className="navItem" onClick={e =>closeMenu()}>Projects</AnchorLink></li>
                     {/* <li><a  className="navItem" href="/#blogsection">Blog</a></li> */}
 
-                    <li><AnchorLink  href="#introsection" className="navItem" onClick={e =>toggleMenu()}>Career</AnchorLink></li>
+                    <li><AnchorLink  href="#introsection" className="navItem" onClick={e =>closeMenu()}>Career</AnchorLink></li>
                     {/* <li><a  className="navItem" href="/#aboutsection">About</a></li> */}
 
-                    <li><AnchorLink  href="#contactsection" className="navItem" onClick={e =>toggleMenu()}>Contact</AnchorLink></li>
+                    <li><AnchorLink  href="#contactsection" className="navItem" onClick={e =>closeMenu()}>Contact</AnchorLink></li>
                     {/* <li><a  className="navItem" href="/#contactsection">Contact</a></li> */}
 
                     {/* responsive nav menu */}
