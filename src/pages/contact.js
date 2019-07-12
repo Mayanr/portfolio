@@ -1,5 +1,4 @@
 import React from "react"
-/*global google*/
 
 
 const Contact = () => {

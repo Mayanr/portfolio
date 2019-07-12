@@ -105,6 +105,8 @@ a.navItem {
         display: block;
         top: 0;
         z-index: 10;
+        height: 35px;
+        width: 35px;
     }
     .responsive  {
         height: 100vh;
@@ -172,9 +174,25 @@ a.navItem {
 }
 @media screen and (max-width: 800px) {
     .sidebar{
+        position: static;
+    }
+    #myLinks{
         display: flex;
         flex-direction: row;
-        bottom: 50px;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .sidebar li {
+        display: inline-block;
+        text-align: center;
+        vertical-align: center;
+    }
+    .sidebar li img:hover {
+        filter: invert(100%);
+        background-color: #B4DE78;
+        transition: 0.7s ease-in;
+        -webkit-transition: 0.7s ease-out;
+        padding: 2px;
     }
 }
 

@@ -10,7 +10,7 @@ const Header = () => {
     const toggleMenu =()=>{
         if (navbar.current.className === "navbar") {
             navbar.current.className += " responsive";
-            navbar.current.onClick = "closeMenu";
+            // navbar.current.onClick += "closeMenu()";
         } else {
             navbar.current.className = "navbar";
         }

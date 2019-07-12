@@ -4,9 +4,9 @@ import React from "react"
 const Links = () => {
 
     return (
-            <div className="sidebar" id="myLinks" >
+            <div className="sidebar"  >
                 
-                <ul>
+                <ul id="myLinks">
 
                     <li><a id="cv" href={require("../media/myMedia/mrothstein_visual_resume.pdf")} className="social_links" target="_blank" rel="noopener noreferrer"><img id="GH_logo"  alt="my resume" src={require("../media/icons/cv.png")} height="30"/></a></li>
 

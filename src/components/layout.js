@@ -11,10 +11,10 @@ const Layout = (props) => {
         <div>
             <Header/>
             <div className="wrapper">
-            <Links/>
                 <div className="content">
                     {props.children}
                 </div>
+                <Links/>
                 <Footer/>
             </div>
         </div>
