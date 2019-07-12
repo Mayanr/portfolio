@@ -148,7 +148,6 @@ a.navItem {
         transition: 0.5s ease;
         -webkit-transition: 0.5s ease;
     }
-
 }
 
 /* sidebar links */
@@ -180,19 +179,23 @@ a.navItem {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 100%;
+        width: 85%;
+        vertical-align: center;
     }
     .sidebar li {
         display: inline-block;
         text-align: center;
-        vertical-align: center;
     }
     .sidebar li img:hover {
         filter: invert(100%);
         background-color: #B4DE78;
-        transition: 0.7s ease-in;
+        transition: 0.7s ease;
         -webkit-transition: 0.7s ease-out;
-        padding: 2px;
+        padding: 5px;
+    }
+
+    .sidebar li img {
+        max-height: 25px;
     }
 }
 
