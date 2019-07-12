@@ -19,7 +19,7 @@ class DevConnector extends Component {
                     <div className="projectTitle">
                         <h2>DevConnector</h2>
                         {/* Links (github and  site link) */}
-                        <a href="https://github.com/Mayanr/SocialNetwork" target="_blank" rel="noopener noreferrer"><img alt="https://github.com/Mayanr/SocialNetwork" src={require("../media/icons/github.svg")}  height="20px"/></a>
+                        <a href="https://github.com/Mayanr/SocialNetwork" target="_blank" rel="noopener noreferrer"><img alt="https://github.com/Mayanr/SocialNetwork" src={require("../media/icons/github.png")}  height="20px"/></a>
                         {/* <a href="" target="_blank" rel="noopener noreferrer"><img alt="" src={require("../media/icons/new_window.png")} height="20px"/></a> */}
                     </div>
                     <ul >

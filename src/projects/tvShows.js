@@ -11,7 +11,7 @@ class TVShows extends Component {
                     <div className="projectTitle">
                         <h2>TV Show Search </h2>
                         {/* Links (github and  site link) */}
-                        <a href="https://github.com/Mayanr/tvShows" target="_blank" rel="noopener noreferrer"><img alt="https://github.com/Mayanr/tvShows" src={require("../media/icons/github.svg")} height="20px"/></a>
+                        <a href="https://github.com/Mayanr/tvShows" target="_blank" rel="noopener noreferrer"><img alt="https://github.com/Mayanr/tvShows" src={require("../media/icons/github.png")} height="20px"/></a>
                         <a href="https://mayanr.github.io/tvShows/shows" target="_blank" rel="noopener noreferrer"><img alt="https://mayanr.github.io/tvShows/shows" src={require("../media/icons/new_window.png")} height="20px"/></a>
                     </div>
                     <ul >

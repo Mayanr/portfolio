@@ -32,7 +32,7 @@ const Intro = () => {
                      </tr>
                  </tbody>
              </table>
-             <a href={require("../media/myMedia/mrothstein_visual_resume.pdf")} target="_blank">
+             <a href={require("../media/myMedia/mrothstein_visual_resume.pdf")} target="_blank" rel="noopener noreferrer">
                 <button id="resume">View Resume >></button>
             </a>
             </div>
