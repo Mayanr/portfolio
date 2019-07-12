@@ -143,6 +143,13 @@ a.navItem {
 
 }
 
+/* sidebar links */
+.sidebar {
+    position: fixed;
+    right: 0;
+    top: 40%;
+}
+
 /* header section formatting */
 #mainTitle {
     position: relative;
