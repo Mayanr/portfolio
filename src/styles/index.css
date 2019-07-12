@@ -111,8 +111,12 @@ a.navItem {
     }
     .responsive  {
         height: 100vh;
-        width: 100wh;
+        /* width: 100wh; */
         background-color:rgba(18, 25, 25, 0.33);
+    }
+    #escapeNav {
+        height: 100%;
+        width: 100wh;
     }
     .navbar nav#mainNavbar{
         top: 0;
@@ -193,11 +197,10 @@ a.navItem {
     .sidebar li img:hover {
         filter: invert(100%);
         background-color: #B4DE78;
-        transition: 0.7s ease;
-        -webkit-transition: 0.7s ease-out;
+        transition: 0.4s ease;
+        -webkit-transition: 0.4s ease;
         padding: 5px;
     }
-
     .sidebar li img {
         max-height: 25px;
     }
@@ -726,11 +729,17 @@ footer {
     text-align: center;
     margin-top: 2%;
 }
+footer img {
+    vertical-align: bottom;
+}
 @media screen and (max-width: 800px) {
     footer {
         font-size: 10px;
         letter-spacing: 1.5px; 
         word-spacing: 3.5px;
+    }
+    footer img {
+    max-height: 12px;
     }
 }
 
