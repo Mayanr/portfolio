@@ -301,8 +301,7 @@ div.projectTitle a:hover{
     border-width: 10px;
     border-style: solid;
     border-image: linear-gradient(140deg, #4B2187, rgb(92, 69, 103, 0.01), rgb(92, 69, 103, 0), rgb(92, 69, 103, 0), #4B2187)3;
-    /* height: 70vh; */
-    min-height: 80vh;
+    /* min-height: 80vh; */
 }
 
 .main{
@@ -635,7 +634,7 @@ a.projectLink:hover .clickLink{
     }
     .section div.newSec{
         padding: 5%;
-        margin-top: 11% ;
+        margin-top: 30% ;
         /* text-align: center; */
     }
     div.projectTitle {
@@ -699,7 +698,7 @@ a.projectLink:hover .clickLink{
 
 #contactForm {
     display: inline-block;
-    width: 45%;
+    width: 90%;
     margin:0;
 }
 

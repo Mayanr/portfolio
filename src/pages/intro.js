@@ -1,9 +1,9 @@
-import React from "react"
-
+import React, { Fragment } from "react"
+import { Link } from "gatsby";
 
 const Intro = () => {
     return (
-        <div>
+        <Fragment>
          <h1>Career</h1>
             <div className="main">
             <h2>Professional Experience</h2> 
@@ -37,7 +37,7 @@ const Intro = () => {
             </a>
             </div>
 
-        </div>
+        </Fragment>
     )
 }
 export default Intro

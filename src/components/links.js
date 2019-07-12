@@ -8,7 +8,7 @@ const Links = () => {
                 
                 <ul id="myLinks">
 
-                    <li><a id="cv" href={require("../media/myMedia/mrothstein_visual_resume.pdf")} className="social_links" target="_blank" rel="noopener noreferrer"><img id="GH_logo"  alt="my resume" src={require("../media/icons/cv.png")} height="30"/></a></li>
+                    <li><a id="cv" href={require("../media/myMedia/mrothstein_visual_resume.pdf")} className="social_links" target="_blank" rel="noopener noreferrer" title="my resume"><img id="GH_logo"  alt="my resume" src={require("../media/icons/cv.png")} height="30"/></a></li>
 
                     <li><a id="github" href="https://github.com/Mayanr" className="social_links" target="_blank" rel="noopener noreferrer">
                     <img id="GH_logo"  alt="https://github.com/Mayanr" src={require("../media/icons/github.png")} height="20"/></a></li>
