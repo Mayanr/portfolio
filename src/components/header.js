@@ -20,23 +20,29 @@ const Header = () => {
         } 
 
     const navbar = useRef();
+    const i_icon = useRef();
     const toggleMenu =()=>{
         if (navbar.current.className === "navbar") {
             navbar.current.className += " responsive";
-            navbar.current.onClick += "closeMenu()";
+            // navbar.current.onClick += "closeMenu()";
+            i_icon.current.className = "fa fa-window-close fa-lg";
         } else {
             navbar.current.className = "navbar";
+            i_icon.current.className = "fa fa-bars fa-lg";
         }
     }
     const closeMenu = () => {
         navbar.current.className = "navbar";
+        i_icon.current.className = "fa fa-bars fa-lg";
     }
 
     return (
         <header>
             <nav className="navbar" id="mainNavbar" ref={navbar}>
                 <a href="javascript:void(0);" className="icon" onClick={e =>toggleMenu()}>
-                    <i className="fa fa-bars"></i>
+                    <i className="fa fa-bars fa-lg" ref={i_icon}></i>
+                    {/* <i className="fa fa-window-close"></i> */}
+
                 </a>
                 
                 <ul>
