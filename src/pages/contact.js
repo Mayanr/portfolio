@@ -3,37 +3,6 @@ import React from "react"
 
 
 const Contact = () => {
-    // var google = window.google = window.google ? window.google : {}
-
-    // const initMap=()=> {
-    //     const google = window.google = window.google ? window.google : {}
-    //     // The location of Uluru
-    //     var uluru = {lat: -25.344, lng: 131.036};
-    //     // The map, centered at Uluru
-    //     var map = new google.maps.Map(
-    //         document.getElementById('map'), {zoom: 4, center: uluru});
-    //     // The marker, positioned at Uluru
-    //     var marker = new google.maps.Marker({position: uluru, map: map});
-    // }
-    // const OPEN_MAP_URL = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDFx2cLKtSno-E_W0EOPRG4B8G9onzlnlk&callback";
-    // const requestURL = `${OPEN_MAP_URL}=${initMap()}`
-    // const api_address =fetch(requestURL, {mode: "no-cors"});
-    
-    // const initMap =() =>{
-    //     const api_address ="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFx2cLKtSno-E_W0EOPRG4B8G9onzlnlk&callback=initMap"
-    //     let myReq = new Request(api_address);
-
-    //     return fetch(myReq, {mode: "no-cors"})
-    //         .then(function(response) {
-    //         if (!response.ok) {
-    //             throw new Error('HTTP error, status = ' + response.status);
-    //         }
-    //         return response.blob();
-    //         })
-    //         .then(function(response) {
-    //             console.log("success")
-    //         });
-    // }
     
     const showIframe=( timeout = 5000)=> {
         document.getElementById("formIframe").style.visibility="visible";

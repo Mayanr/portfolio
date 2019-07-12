@@ -149,6 +149,9 @@ a.navItem {
     right: 0;
     top: 40%;
 }
+.social_links{
+    margin-top: 5%;
+}
 
 /* header section formatting */
 #mainTitle {
