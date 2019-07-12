@@ -10,6 +10,7 @@ const Header = () => {
     const toggleMenu =()=>{
         if (navbar.current.className === "navbar") {
             navbar.current.className += " responsive";
+            navbar.current.onClick = "closeMenu";
         } else {
             navbar.current.className = "navbar";
         }
@@ -24,8 +25,9 @@ const Header = () => {
                 <a href="javascript:void(0);" className="icon" onClick={e =>toggleMenu()}>
                     <i className="fa fa-bars"></i>
                 </a>
+                
                 <ul>
-                    <li id="myLogo"><AnchorLink href="#mainTitle" className="navItem"><img id="myLogo_img" alt="MR logo" src={require("../media/myMedia/MR_logo2.png")} height="35"/></AnchorLink></li>
+                    <li id="myLogo"><AnchorLink href="#mainTitle" className="navItem" onClick={e =>closeMenu()}><img id="myLogo_img" alt="MR logo" src={require("../media/myMedia/MR_logo2.png")} height="35"/></AnchorLink></li>
 
                     <li><AnchorLink href="#aboutsection" className="navItem" onClick={e =>closeMenu()}>About</AnchorLink></li>
                     {/* <li><a  className="navItem" href="/#introsection">Intro</a></li> */}

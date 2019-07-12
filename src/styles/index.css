@@ -106,17 +106,19 @@ a.navItem {
         top: 0;
         z-index: 10;
     }
-    /* .navbar.responsive {
-        height: 100%;
-        background-color:rgba(23, 18, 25, 0.3);
-    } */
+    .responsive  {
+        height: 100vh;
+        width: 100wh;
+        background-color:rgba(18, 25, 25, 0.33);
+    }
     .navbar.responsive ul {
         /* position: sticky; */
         display: block; 
         margin: 0; 
         padding : 0;
         background-color:#4B2187;
-        z-index: 2;
+        border-bottom: 3px solid white;
+        box-shadow: 0 0 4px 0 #888888;
     }
     .navbar.responsive a.icon {
       position: relative;
@@ -151,10 +153,10 @@ a.navItem {
 .sidebar {
     position: fixed;
     right: 0;
-    top: 50%;
+    top: 55%;
 }
 .sidebar li{
-    width: 50px;
+    width: 40px;
     height: 50px;
     margin-top: 5%;
     margin-left: 0;
@@ -171,6 +173,7 @@ a.navItem {
 @media screen and (max-width: 800px) {
     .sidebar{
         display: flex;
+        flex-direction: row;
         bottom: 50px;
     }
 }
