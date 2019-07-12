@@ -7,7 +7,11 @@ const Links = () => {
             <div className="sidebar" id="myLinks" >
                 
                 <ul>
-                    <li><a id="github" href="https://github.com/Mayanr" className="social_links" target="_blank" rel="noopener noreferrer"><img id="GH_logo"  alt="https://github.com/Mayanr" src={require("../media/icons/github.png")} height="30"/></a></li>
+
+                    <li><a id="cv" href={require("../media/myMedia/mrothstein_visual_resume.pdf")} className="social_links" target="_blank" rel="noopener noreferrer"><img id="GH_logo"  alt="my resume" src={require("../media/icons/cv.png")} height="40"/></a></li>
+
+                    <li><a id="github" href="https://github.com/Mayanr" className="social_links" target="_blank" rel="noopener noreferrer">
+                    <img id="GH_logo"  alt="https://github.com/Mayanr" src={require("../media/icons/github.png")} height="30"/></a></li>
 
                     <li><a id="linkedIn" href="www.linkedin.com/in/mayan-rothstein" className="social_links" target="_blank" rel="noopener noreferrer"><img id="LI_logo" alt="www.linkedin.com/in/mayan-rothstein" src={require("../media/icons/li.png")} height="30"/></a></li>
 

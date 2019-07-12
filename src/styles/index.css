@@ -82,6 +82,7 @@ a.navItem {
 .navItem:hover {
     letter-spacing: 8px; 
     transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
 }
 
 .navItem:active {
@@ -97,8 +98,6 @@ a.navItem {
     background-color:#4B2187;
 }
 
-
-
 @media screen and (max-width: 800px) {
     .navbar li:not(:first-child) {display: none;}
     .navbar a.icon {
@@ -107,14 +106,18 @@ a.navItem {
         top: 0;
         z-index: 10;
     }
-
+    /* .navbar.responsive {
+        height: 100%;
+        background-color:rgba(23, 18, 25, 0.3);
+    } */
     .navbar.responsive ul {
         /* position: sticky; */
         display: block; 
         margin: 0; 
         padding : 0;
+        background-color:#4B2187;
+        z-index: 2;
     }
-
     .navbar.responsive a.icon {
       position: relative;
       top: 0;
@@ -139,6 +142,7 @@ a.navItem {
        background-color:rgba(23, 18, 25, 0.3);
        letter-spacing: 8px; 
         transition: 0.5s ease;
+        -webkit-transition: 0.5s ease;
     }
 
 }
@@ -147,17 +151,28 @@ a.navItem {
 .sidebar {
     position: fixed;
     right: 0;
-    top: 40%;
+    top: 50%;
 }
-.sidebar a{
-    width: 40px;
-    height: 40px;
-    margin-top: 15%;
+.sidebar li{
+    width: 50px;
+    height: 50px;
+    margin-top: 5%;
+    margin-left: 0;
+    text-align: right;
 }
 
-.sidebar li a:hover {
-    margin-right: 50%;
-    transition: 0.5s ease;
+.sidebar li img:hover {
+    padding-right: 20px;
+    transition: 0.7s ease-out;
+    -webkit-transition: 0.7s ease-out;
+    filter: invert(100%);
+    background-color: #B4DE78;
+}
+@media screen and (max-width: 800px) {
+    .sidebar{
+        display: flex;
+        bottom: 50px;
+    }
 }
 
 /* header section formatting */
@@ -251,7 +266,7 @@ div.projectTitle a:hover{
     border-style: solid;
     border-image: linear-gradient(140deg, #4B2187, rgb(92, 69, 103, 0.01), rgb(92, 69, 103, 0), rgb(92, 69, 103, 0), #4B2187)3;
     /* height: 70vh; */
-    min-height: 90vh;
+    min-height: 80vh;
 }
 
 .main{
@@ -441,6 +456,7 @@ li.techLogos img {
 }
 .projectImg {
     transition: .5s ease;
+    -webkit-transition: 0.5s ease;
     backface-visibility: hidden;
 }
 a.projectLink:hover .projectImg{
@@ -448,6 +464,7 @@ a.projectLink:hover .projectImg{
 }
 .clickLink {
     transition: .5s ease;
+    -webkit-transition: 0.5s ease;
     opacity: 0;
     position: absolute;
     top: 100px;
@@ -681,6 +698,13 @@ footer {
     text-align: center;
     margin-top: 2%;
 }
+@media screen and (max-width: 800px) {
+    footer {
+        font-size: 10px;
+        letter-spacing: 1.5px; 
+        word-spacing: 3.5px;
+    }
+}
 
 button, .linkText{
     padding: 15px;;
@@ -708,6 +732,7 @@ button:hover {
     border: 2px solid #988CB7;
     letter-spacing: 4px; 
     transition: 0.75s ease;
+    -webkit-transition: 0.75s ease;
 }
 
 /* form styling */
