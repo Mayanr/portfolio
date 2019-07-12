@@ -45,7 +45,7 @@ class DevConnector extends Component {
                         <li className="techLogos">
                             <img alt="React" src={require("../media/tech_logos/react.png")} height="30px"/>
                             <img alt="Redux" src={require("../media/tech_logos/redux.png")}  height="30px"/>
-                            <img alt="MongoDB" src={require("../media/tech_logos/mongodb.png")} height="50px"/>
+                            <img alt="MongoDB" src={require("../media/tech_logos/mongodb.png")} height="60px"/>
                             <img alt="Github API" src={require("../media/tech_logos/github_api3.png")} title="Github API" height="45px"/>
                         </li>
                     </ul>

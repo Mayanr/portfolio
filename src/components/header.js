@@ -6,6 +6,45 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 
 const Header = () => {
+    var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if(window.innerWidth > 800){
+                if (prevScrollpos > currentScrollPos ) {
+                    document.getElementById("mainNavbar").style.top = "0";
+                } else {
+                    document.getElementById("mainNavbar").style.top = "-70px";
+                }
+            }
+        prevScrollpos = currentScrollPos;
+        } 
+
+
+    // const mq = window.matchMedia( "(min-width: 800px)" );
+    // if (mq.matches) {
+    //     var prevScrollpos = window.pageYOffset;
+    //     window.onscroll = function() {
+    //         var currentScrollPos = window.pageYOffset;
+    //             if (prevScrollpos > currentScrollPos) {
+    //                 document.getElementById("mainNavbar").style.top = "0";
+    //             } else {
+    //                 document.getElementById("mainNavbar").style.top = "-70px";
+    //             }
+    //     prevScrollpos = currentScrollPos;
+    //     } 
+    // }
+    // if (matchMedia) {
+    //     mq.addListener(WidthChange);
+    //     WidthChange(mq);
+    //     function WidthChange(mq) {
+    //         if (mq.matches) {
+    //                 console.log("this is the if statement")
+    //         } else {
+    //             console.log("this is the else statement")
+    //         }
+    //     }
+    // }
+
     const navbar = useRef();
     const toggleMenu =()=>{
         if (navbar.current.className === "navbar") {
@@ -18,6 +57,9 @@ const Header = () => {
     const closeMenu = () => {
         navbar.current.className = "navbar";
     }
+    // const dynamicNav = () => {
+        
+    // }
 
     return (
         <header>
