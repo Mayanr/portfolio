@@ -26,8 +26,8 @@ class IndexPage extends Component {
                 <button ><AnchorLink  id="chatLink" href="#contactsection">Let's Chat >></AnchorLink></button>
             </div>
 
-            <div id="aboutsection" className="section" >
-                <div className= "newSec" style={{marginTop: 0}}>
+            <div id="aboutsection" className="section" style={{marginTop: 15+"%"}}>
+                <div className= "newSec" >
                     <About />
                 </div> 
             </div>  

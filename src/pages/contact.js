@@ -20,6 +20,7 @@ const Contact = () => {
             <div className="main contactComponent">
                 <form id="contactForm" method="POST" action="https://formspree.io/arothstein90@gmail.com" target="iframe1">
                 <h2>Let's Talk</h2>
+                <p>Always happy to chat...whether its for freelance or job opportunities, comments, questions, or just to say 'hi!'. Feel free to email me at mayan@bu.edu or submit a message below. Speak soon!</p>
                 <br />
                     <input type="text" name="name" placeholder="Name"  size="80" required/>
                     <br/>

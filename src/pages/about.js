@@ -22,27 +22,27 @@ const About = () => {
 
                 <ul>
                 <li className="techLogos" id="aboutTech">
-                    <img alt="Python" src={require("../media/tech_logos/python.png")}  height="40px"/>
-                    <img alt="Django" src={require("../media/tech_logos/django.png")}  height="25px"/>
-                    <img alt="Flask" src={require("../media/tech_logos/flask.png")}  height="25px"/>
-                    <img alt="Jinja" src={require("../media/tech_logos/jinja.png")}  height="30px"/>
-                    <img alt="JavaScript" src={require("../media/tech_logos/javascript.png")}  height="30px"/>
-                    <img alt="node.js" src={require("../media/tech_logos/nodejs.png")}   height="30px"/>
-                    <img alt="Angular" src={require("../media/tech_logos/angular.png")} height="35px"/>
-                    <img alt="React" src={require("../media/tech_logos/react.png")} height="30px"/>
-                    <img alt="Gatsby" src={require("../media/tech_logos/gatsby.png")}  height="20px"/>
-                    <img alt="html" src={require("../media/tech_logos/html.png")}  height="30px"/>
-                    <img alt="css" src={require("../media/tech_logos/css.png")}  height="35px"/>
-                    <img alt="MySQL" src={require("../media/tech_logos/MySQL.png")}  height="45px"/>
-                    <img alt="SQLite" src={require("../media/tech_logos/sqlite.png")}  height="25px"/>
-                    <img alt="MongoDB" src={require("../media/tech_logos/mongodb.png")} height="55px"/>
-                    <img alt="Redux" src={require("../media/tech_logos/redux.png")}  height="25px"/>
+                    <img alt="Python" src={require("../media/tech_logos/python.png")}  height="40px" title = "Python"/>
+                    <img alt="Django" src={require("../media/tech_logos/django.png")}  height="25px"  title = "Django"/>
+                    <img alt="Flask" src={require("../media/tech_logos/flask.png")}  height="25px" title = "Flask"/>
+                    <img alt="Jinja" src={require("../media/tech_logos/jinja.png")}  height="30px" title = "Jinja"/>
+                    <img alt="JavaScript" src={require("../media/tech_logos/javascript.png")}  height="30px" title = "JavaScript"/>
+                    <img alt="Node.js" src={require("../media/tech_logos/nodejs.png")}   height="30px" title = "Node.js"/>
+                    <img alt="Angular" src={require("../media/tech_logos/angular.png")} height="35px" title = "Angular"/>
+                    <img alt="React" src={require("../media/tech_logos/react.png")} height="30px" title = "React"/>
+                    <img alt="Gatsby" src={require("../media/tech_logos/gatsby.png")}  height="20px" title = "Gatsby"/>
+                    <img alt="html" src={require("../media/tech_logos/html.png")}  height="30px" title = "HTML"/>
+                    <img alt="css" src={require("../media/tech_logos/css.png")}  height="35px" title = "CSS"/>
+                    <img alt="MySQL" src={require("../media/tech_logos/MySQL.png")}  height="45px" title = "MySQL"/>
+                    <img alt="SQLite" src={require("../media/tech_logos/sqlite.png")}  height="25px" title = "SQLite"/>
+                    <img alt="MongoDB" src={require("../media/tech_logos/mongodb.png")} height="55px" title = "Mongodb"/>
+                    <img alt="Redux" src={require("../media/tech_logos/redux.png")}  height="25px" title = "Redux"/>
                 </li>
                 </ul>
                 </div>
 
                 <div id="portfolioPhoto">
-                    <img  id="myPhoto" src={require("../media/myMedia/portfolio_photo.jpg")} alt="Mayan Rothstein"/>
+                    <img  id="myPhoto" src={require("../media/myMedia/portfolio_photo.jpg")} alt="Mayan Rothstein" title="Mayan Rothstein"/>
                 </div>
 
             </div>

@@ -24,18 +24,42 @@ ul {
 
 .wrapper {
     margin: 0 auto;
-    max-width: 90%;
-    padding: 1rem;
+    /* max-width: 90%; */
+    /* padding: 1rem; */
 
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
-
 .content {
     flex-grow: 1;
 }
-
+button, .linkText{
+    padding: 15px;;
+    background: #4B2187;
+    color: white;
+    font-family: Federo;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    letter-spacing: 2px; 
+    word-spacing: 4px;
+    text-align: center;
+    margin: 3% 0;
+    border:  2px solid #4B2187;
+}
+button #chatLink {
+    /* background-color: #4B2187; */
+    /* border: 2px solid rgb(255, 255, 255, 0) */
+    color: white;
+    text-decoration: none;
+}
+button:hover {
+    border: 2px solid #988CB7;
+    letter-spacing: 4px; 
+    transition: 0.75s ease;
+    -webkit-transition: 0.75s ease;
+}
 /* Navigation */
 .navbar li{
     width: 15%;
@@ -43,12 +67,10 @@ ul {
     text-align: center;
     vertical-align: center;
 }
-
 .navbar li#myLogo {
-    max-height: 35px;
-    max-width: 35px;
+    height: 40px;
+    width: 50px;
 }
-
 .navbar li#myLogo:hover img#myLogo_img{
     filter: drop-shadow(-7px 10px 1px #988CB7) ;
     margin-left: 5px;
@@ -56,14 +78,12 @@ ul {
     transition: 0.4s ease;
     -webkit-transition: 0.2s ease;
 }
-
 .navbar ul{
     padding: 5px 15px 5px 0;
     display: flex;
     justify-content: space-between;
     margin:8px;
 }
-
 .navbar {
     background-color: #4B2187;
     text-align: center;
@@ -134,7 +154,6 @@ ul {
       top: 0;
       right: 0;
     }
-
     .navbar.responsive ul li {
       float: none;
       display: block;
@@ -143,13 +162,11 @@ ul {
       padding: 8px;
       /* position: sticky; */
     }
-
     .navbar.responsive ul li a.navItem {
         width: 100%;
         height: 100%;
         display: block;
     }
-
     .navbar.responsive ul li:not(:first-child):hover {
        background-color:rgba(23, 18, 25, 0.3);
        letter-spacing: 8px; 
@@ -169,7 +186,7 @@ ul {
 .sidebar {
     position: fixed;
     right: 0;
-    bottom: 25%;
+    bottom: 10%;
 }
 .sidebar li{
     width: 40px;
@@ -195,14 +212,13 @@ ul {
     bottom: 0;
     /* bottom: 15%; */
     font-size: 17px;
-    font-weight: bold;
     -webkit-transform: rotate(-90deg);
     -ff-transform: rotate(-90deg);
     transform: rotate(-90deg);
     margin: 0;
     border-top: 1.5px dotted #4B2187;
     padding-left:15%;
-    padding-bottom: 17%;
+    padding-bottom: 15%;
     /* margin-right: 25%; */
 }
 #emailLeftSide{
@@ -238,9 +254,11 @@ ul {
         -webkit-transform: none;
         -ff-transform: none;
         /* border: none; */
-        padding: 0;
-        width: 100%;
+        padding: 2% 0;
+        width: 90%;
+        margin: 0 auto;
         text-align: center;
+        font-size: 13px;
     }
 }
 
@@ -251,11 +269,13 @@ ul {
     padding-top: 10%;
     padding-left: 10%;
     min-height: 100vh;
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 @media screen and (min-width: 1480px) {
-    #mainTitle{
-        padding: 5% 15%;
+    div#mainTitle{
+        padding: 5% 15% 0;
     }
 }
 
@@ -327,17 +347,20 @@ div.projectTitle a:hover{
     /* border-width: 10px;
     border-style: solid; */
     /* border-image: linear-gradient(140deg, #820263, #171219, #171219, #820263)3; */
-  
+}
+#aboutsection, #introsection, footer {
+    background-color:rgb(92, 69, 103, 0.2);
 }
 
 .section div.newSec{
-    margin: 100px 0;
+    margin: 100px auto;
     padding: 40px 0;
     padding-right: 0%;
-    border-width: 10px;
-    border-style: solid;
+    max-width: 85%;
+    /* border-width: 10px;
+    border-style: solid; */
     /* border-image: linear-gradient(to bottom, #820263, #171219, #171219); */
-    border-image: linear-gradient(140deg, #4B2187, rgb(92, 69, 103, 0.01), rgb(92, 69, 103, 0), rgb(92, 69, 103, 0))3;
+    /* border-image: linear-gradient(140deg, #4B2187, rgb(92, 69, 103, 0.01), rgb(92, 69, 103, 0), rgb(92, 69, 103, 0))3; */
     min-height: 80vh;
 }
 
@@ -379,12 +402,12 @@ div.projectTitle a:hover{
 }
 #bio {
     display: inline-block;
-    width: 60%;
+    width: 70%;
     padding-right: 2%;
     font-weight: normal;
 }
 div#portfolioPhoto{
-    width: 38%;
+    width: 28%;
     display: inline-block;
     vertical-align: top;
     text-align: right;
@@ -423,9 +446,11 @@ div#portfolioPhoto{
     #myPhoto {
         max-height: 100px;
     } */
+    #bio {
+        font-size: 14px;
+    }
     #myPhoto{
-        vertical-align: top;
-        max-width: 200px;
+        max-width: 160px;
     }
 }
 
@@ -445,17 +470,16 @@ div#portfolioPhoto{
     }
     
 }
-
 /* project section */
 .projectContent {
     display: inline-block;
     vertical-align: top;
     width: 45%;
 }
-
 .projectContent ul {
     padding: 4%;
-    background-color:rgb(152, 140, 183, 0.5);
+    background-color:rgb(152, 140, 183, 0.2);
+    /* background-color: rgb(98, 1, 229, 0.5); */
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -463,7 +487,6 @@ div#portfolioPhoto{
 .projectMargin {
     margin-left: 180px;
 }
-
 /* styling for alternating project image-content placement */
 .alternateSide ul{
     border-top-left-radius: 0;
@@ -472,52 +495,43 @@ div#portfolioPhoto{
 .alternateSide .projectTitle {
     text-align: right;
 }
-
 .projectImg {
     display: inline-block;
     vertical-align: top;
     width: 53%;
 }
-
 ol {
     list-style: square;
     padding-left: 20px;
 }
-
 ol li{
     padding: 2px 0;
     font-size: 14px;
 }
-
 .functionalities {
     padding: 2px 0;
     list-style: none;
     padding-left: -20px;
     margin-bottom: 0;
 }
-
 div.projectContent li.techLogos{
     text-align: center;
     display: table;
     width: 100%;
 }
-
 li.techLogos img {
     vertical-align: middle;
     padding: 2%;
 }
-
 .projectComponent {
     min-height: 480px;
     margin: 15% 0;
 }
-
 .italicize{
     font-style: italic;
-    font-size: 10px;
+    font-size: 11px;
     margin-bottom: 0;
 }
-
 .section div.newSec {
     margin-bottom: 3%;
 }
@@ -671,7 +685,7 @@ a.projectLink:hover .clickLink{
     }
     .section div.newSec{
         padding: 5%;
-        margin-top: 30% ;
+        margin: 15% 0;
         /* text-align: center; */
     }
     div.projectTitle {
@@ -781,7 +795,8 @@ footer {
     letter-spacing: 1.5px; 
     word-spacing: 7px;
     text-align: center;
-    margin-top: 2%;
+    padding-top: 1%;
+    margin-top: 3%
 }
 footer img {
     vertical-align: bottom;
@@ -794,33 +809,4 @@ footer img {
     footer img {
     max-height: 12px;
     }
-}
-
-button, .linkText{
-    padding: 15px;;
-    background: #4B2187;
-    color: white;
-    font-family: Federo;
-    border: none;
-    border-radius: 10px;
-    font-size: 15px;
-    letter-spacing: 2px; 
-    word-spacing: 4px;
-    text-align: center;
-    margin: 3% 0;
-    border:  2px solid #4B2187;
-}
-
-button #chatLink {
-    /* background-color: #4B2187; */
-    /* border: 2px solid rgb(255, 255, 255, 0) */
-    color: white;
-    text-decoration: none;
-}
-
-button:hover {
-    border: 2px solid #988CB7;
-    letter-spacing: 4px; 
-    transition: 0.75s ease;
-    -webkit-transition: 0.75s ease;
 }
