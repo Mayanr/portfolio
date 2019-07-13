@@ -1,9 +1,10 @@
-import React from "react"
+import React, { Fragment } from "react"
 
 
 const Links = () => {
 
     return (
+        <Fragment>
             <div className="sidebar"  >
                 
                 <ul id="myLinks">
@@ -19,8 +20,12 @@ const Links = () => {
 
                     <li><a id="instagram" href="https://www.instagram.com/mayanrothstein/" className="social_links" target="_blank" rel="noopener noreferrer"><img id="IG_logo" alt="https://www.instagram.com/mayanrothstein/" src={require("../media/icons/ig.png")} height="20"/></a></li>
 
-                </ul>
+                </ul> 
             </div>
+            <div id="containsEmail"> 
+                <p id="emailLeftSide">mayan@bu.edu</p>
+            </div>
+        </Fragment>
     )
 }
 export default Links

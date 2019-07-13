@@ -41,7 +41,7 @@ class TVShows extends Component {
                 </div>
 
                 <a className="projectLink" href="https://mayanr.github.io/tvShows/shows" target="_blank" rel="noopener noreferrer">
-                    <img className = "projectImg" src={require("../media/myProjects/tvShows2_thumbnail.jpg")} alt="Site home page screenshot"/>
+                    <img className = "projectImg" src={require("../media/myProjects/tvShows3_thumbnail.jpg")} alt="Site home page screenshot"/>
                     <div className="clickLink">
                         <div className="linkText">Search For Shows>></div>
                     </div>

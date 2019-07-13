@@ -6,8 +6,9 @@
 /* formatting accross pages */
 body{
     margin: 0 auto;
-    background-color:rgb(92, 69, 103, 0.3);
-    font-family: Jura;
+    background-color:rgb(92, 69, 103, 0.25);
+    /* background-image: linear-gradient(to top,rgb(92, 69, 103, 0.9) rgb(92, 69, 103, 0.7), rgb(92, 69, 103, 0.5) rgb(92, 69, 103, 0.01)); */
+    font-family: Jura; 
     /* box-sizing: border-box; */
     /* background-color: rgb(88, 30, 105); */
     /* background-image: linear-gradient(to right ,rgb(88, 30, 105), black); */
@@ -76,7 +77,7 @@ ul {
 }
 .navbar a.navItem {
     display:inline-block;
-    padding: 5px 20px;
+    padding: 10px 20px;
     text-decoration: none;
     color: white;
     font-family: Federo; 
@@ -168,7 +169,7 @@ ul {
 .sidebar {
     position: fixed;
     right: 0;
-    top: 55%;
+    bottom: 25%;
 }
 .sidebar li{
     width: 40px;
@@ -177,18 +178,39 @@ ul {
     margin-left: 0;
     text-align: right;
 }
-
+.sidebar li img {
+    padding-right: 30%;
+}
 .sidebar li img:hover {
-    padding-right: 20px;
+    padding-right: 50%;
     transition: 0.7s ease-out;
     -webkit-transition: 0.7s ease-out;
     filter: invert(100%);
     background-color: #B4DE78;
 }
+#containsEmail {
+    position: fixed;
+    left: 0;
+    /* margin-left: -100px; */
+    bottom: 0;
+    /* bottom: 15%; */
+    font-size: 17px;
+    font-weight: bold;
+    -webkit-transform: rotate(-90deg);
+    -ff-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    margin: 0;
+    border-top: 1.5px dotted #4B2187;
+    padding-left:15%;
+    padding-bottom: 17%;
+    /* margin-right: 25%; */
+}
+#emailLeftSide{
+    margin: 0;
+}
 @media screen and (max-width: 800px) {
-    .sidebar{
+    .sidebar, #containsEmail{
         position: static;
-        padding-right: 2%;
     }
     #myLinks{
         display: flex;
@@ -211,13 +233,23 @@ ul {
     .sidebar li img {
         max-height: 25px;
     }
+    #containsEmail {
+        transform: none;
+        -webkit-transform: none;
+        -ff-transform: none;
+        /* border: none; */
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
 }
 
 /* header section formatting */
 #mainTitle {
     position: relative;
     top: 50px;
-    padding: 5% 10%;
+    padding-top: 10%;
+    padding-left: 10%;
     min-height: 100vh;
 }
 
@@ -262,7 +294,7 @@ ul {
 
 /* section styling */
 h2 {
-    color: #988CB7; 
+    color: #4B2187; 
     letter-spacing: 2px;
     font-size: 20px;
     font-family: Federo; 
@@ -286,10 +318,6 @@ div.projectTitle a:hover{
     opacity: 1;
 }
 
-/* div.projectTitle {
-    vertical-align: top;
-} */
-
 .section {
     /* margin-top: 300px; */
     /* background-image: linear-gradient(to bottom, #820263, #171219, #171219); */
@@ -308,8 +336,9 @@ div.projectTitle a:hover{
     padding-right: 0%;
     border-width: 10px;
     border-style: solid;
-    border-image: linear-gradient(140deg, #4B2187, rgb(92, 69, 103, 0.01), rgb(92, 69, 103, 0), rgb(92, 69, 103, 0), #4B2187)3;
-    /* min-height: 80vh; */
+    /* border-image: linear-gradient(to bottom, #820263, #171219, #171219); */
+    border-image: linear-gradient(140deg, #4B2187, rgb(92, 69, 103, 0.01), rgb(92, 69, 103, 0), rgb(92, 69, 103, 0))3;
+    min-height: 80vh;
 }
 
 .main{
@@ -333,7 +362,7 @@ div.projectTitle a:hover{
     vertical-align: top;
     /* transition: .5s ease; */
     /* letter-spacing: 1px; */
-    color: #988CB7; 
+    color: #4B2187; 
     letter-spacing: 8px;
     font-family: Federo; 
     font-style: normal; 
@@ -631,8 +660,8 @@ a.projectLink:hover .clickLink{
         width: 100%;
     }
     .section div h1 {
-        transform: none;
         display: block;
+        transform: none;
         -webkit-transform: none;
         -ff-transform: none;
         width: 100%;
@@ -795,5 +824,3 @@ button:hover {
     transition: 0.75s ease;
     -webkit-transition: 0.75s ease;
 }
-
-
