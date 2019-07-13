@@ -41,12 +41,10 @@ const Header = () => {
             <nav className="navbar" id="mainNavbar" ref={navbar}>
                 <a href="javascript:void(0);" className="icon" onClick={e =>toggleMenu()}>
                     <i className="fa fa-bars fa-lg" ref={i_icon}></i>
-                    {/* <i className="fa fa-window-close"></i> */}
-
                 </a>
                 
                 <ul>
-                    <li id="myLogo"><AnchorLink href="#mainTitle" className="navItem" onClick={e =>closeMenu()}><img id="myLogo_img" alt="MR logo" src={require("../media/myMedia/MR_logo2.png")} height="35"/></AnchorLink></li>
+                    <li id="myLogo"><AnchorLink href="#mainTitle" onClick={e =>closeMenu()}><img id="myLogo_img" alt="MR logo" src={require("../media/myMedia/MR_logo2.png")} height="35"/></AnchorLink></li>
 
                     <li><AnchorLink href="#aboutsection" className="navItem" onClick={e =>closeMenu()}>About</AnchorLink></li>
                     {/* <li><a  className="navItem" href="/#introsection">Intro</a></li> */}
@@ -63,9 +61,7 @@ const Header = () => {
                     {/* responsive nav menu */}
 
                 </ul>
-                <div id="escapeNav" onClick={e =>closeMenu()}>
-
-                </div>
+                <div id="escapeNav" onClick={e =>closeMenu()}></div>
             </nav>
         </header>
     )

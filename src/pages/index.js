@@ -13,7 +13,6 @@ class IndexPage extends Component {
     render(){
         return (
             <Layout>
-            {/* <SEO title = "Mayan Rothstein: Portfolio" keywors={[`mayan rothstein`, `portfolio`, `software developer`]}/> */}
             <div id="mainTitle">
                 <p style={{fontSize: 20+"px"}}>Hello! My name is</p>
                 <h1>Mayan Rothstein</h1> 
@@ -28,7 +27,7 @@ class IndexPage extends Component {
             </div>
 
             <div id="aboutsection" className="section" >
-                <div className= "newSec">
+                <div className= "newSec" style={{marginTop: 0}}>
                     <About />
                 </div> 
             </div>  

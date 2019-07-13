@@ -6,7 +6,7 @@
 /* formatting accross pages */
 body{
     margin: 0 auto;
-    background-color:rgb(92, 69, 103, 0.1);
+    background-color:rgb(92, 69, 103, 0.3);
     font-family: Jura;
     /* box-sizing: border-box; */
     /* background-color: rgb(88, 30, 105); */
@@ -37,8 +37,6 @@ ul {
 
 /* Navigation */
 .navbar li{
-    list-style: none;
-    /* display: inline-block; */
     width: 15%;
     height: 35px;
     text-align: center;
@@ -76,7 +74,8 @@ ul {
     box-shadow: 0 0 4px 0 #888888;
     transition: top 0.5s; /* Transition effect when sliding down (and up) */
 }
-a.navItem {
+.navbar a.navItem {
+    display:inline-block;
     padding: 5px 20px;
     text-decoration: none;
     color: white;
@@ -108,9 +107,8 @@ a.navItem {
     .navbar a.icon {
         float: right;
         display: block;
-        top: 0;
+        padding-top: 16px;
         z-index: 10;
-        height: 35px;
         width: 35px;
     }
     .responsive  {
@@ -122,14 +120,10 @@ a.navItem {
         height: 100%;
         width: 100wh;
     }
-    .navbar nav#mainNavbar{
-        top: 0;
-    }
     .navbar.responsive ul {
-        /* position: sticky; */
         display: block; 
         margin: 0; 
-        padding : 0;
+        padding :0;
         background-color:#4B2187;
         border-bottom: 3px solid white;
         box-shadow: 0 0 4px 0 #888888;
@@ -161,6 +155,13 @@ a.navItem {
         transition: 0.5s ease;
         -webkit-transition: 0.5s ease;
     }
+    #myLogo {
+        padding: 0;
+    }
+    .responsive #myLogo {
+        padding-top: 13px;
+        padding-left: 10px;   
+    }
 }
 
 /* sidebar links */
@@ -187,6 +188,7 @@ a.navItem {
 @media screen and (max-width: 800px) {
     .sidebar{
         position: static;
+        padding-right: 2%;
     }
     #myLinks{
         display: flex;
@@ -215,8 +217,14 @@ a.navItem {
 #mainTitle {
     position: relative;
     top: 50px;
-    padding: 5% 0;
+    padding: 5% 10%;
     min-height: 100vh;
+}
+
+@media screen and (min-width: 1480px) {
+    #mainTitle{
+        padding: 5% 15%;
+    }
 }
 
 #mainTitle h1{
@@ -230,7 +238,7 @@ a.navItem {
 }
 
 #mainTitle h2 {
-    color:#988CB7;
+    color: #210072;
     opacity: 0.5;
     font-size: 35px;
     font-family: Federo;
@@ -678,6 +686,13 @@ a.projectLink:hover .clickLink{
 
 
 /* Career section */
+#resumeTable {
+    background-color:rgb(152, 140, 183, 0.5);
+    margin-left: 1%;
+    padding: 1%;
+    border-radius: 15px;
+}
+
 @media screen and (max-width: 800px){
     #resume{
         max-width: 200px;
@@ -734,7 +749,7 @@ form, input, textarea {
 footer {
     font-family: Federo;
     font-size: 12px;
-    letter-spacing: 5px; 
+    letter-spacing: 1.5px; 
     word-spacing: 7px;
     text-align: center;
     margin-top: 2%;
@@ -745,7 +760,6 @@ footer img {
 @media screen and (max-width: 800px) {
     footer {
         font-size: 10px;
-        letter-spacing: 1.5px; 
         word-spacing: 3.5px;
     }
     footer img {
