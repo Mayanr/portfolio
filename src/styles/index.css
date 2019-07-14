@@ -749,23 +749,33 @@ a.projectLink:hover .clickLink{
     /* width: 35%; */
     background-color:rgb(152, 140, 183, 0.5);
     text-align: center;
+    width: 200px;
 }
 #companySelection li {
-    width: 150px;
-    height: 60px;
-    display: table;
+    height: 50px;
+    /* display: table; */
+    width: 200px;
+    /* border-left: none; */
+    vertical-align: middle;
+    display: inline-block;
+}
+#companySelection li:focus{
+    border-left: 2px solid #4B2187;
+    outline: none;
+    background-color: #B5ACC0;
+    width: 198px;
 }
 #companySelection img {
     vertical-align: middle;
-    display: table-cell;
+    /* display: table-cell; */
+    display: inline-block;
+    margin: 0 auto;
 }
 #jobDesc {
     background-color:rgb(152, 140, 183, 0.2);
     padding-left: 5%;
 }
-#jobDesc h3 {
-    margin-top: 0;
-}
+
 
 @media screen and (max-width: 800px){
     #resume{
