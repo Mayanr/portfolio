@@ -8,22 +8,19 @@ import Intro from "./intro";
 
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
-const backgorundColorPrimary ={
-    backgroundColor:"rgb(92, 69, 103, 0.25)"
-}
-const backgorundColorSecondary = {
-    backgroundColor:"rgb(92, 69, 103, 0.2)"
-}
-
 class IndexPage extends Component {
     render(){
-        // const scrollToTop = () => {
-        //     window.scrollTo(0,0);
-        //     // window.location("#top");
-        //     document.getElementById('#top').scrollIntoView();
-        // }
+        const ieBackgrounds = () =>{
+            // document.getElementById("layout").style.backgroundColor = "rgb(92, 69, 103, 0.25)";
+            // document.getElementById("aboutsection").style.backgroundColor = "rgb(92, 69, 103, 0.2)";
+            // document.getElementById("introsection").style.backgroundColor = "rgb(92, 69, 103, 0.2)";
+            // document.getElementById("footer").style.backgroundColor = "rgb(92, 69, 103, 0.2)";
+        }
+        const backgorundColorSecondary = {
+            backgroundColor:"rgb(92, 69, 103, 0.2)"
+        }
         return (
-            <Layout id="top" style={backgorundColorPrimary}>
+            <Layout id="layout" >
             <div id="mainTitle">
                 <p style={{fontSize: 20+"px"}}>Hello! My name is</p>
                 <h1>Mayan Rothstein</h1> 
@@ -55,7 +52,7 @@ class IndexPage extends Component {
                 </div>
             </div>      
 
-            <div id="contactsection" className="section">
+            <div id="contactsection" className="section" onLoad={ieBackgrounds()}>
                 <div className= "newSec">
                     <Contact className="innerBox"/>
                 </div> 

@@ -790,7 +790,20 @@ a.projectLink:hover .clickLink{
     #companySelection li {
         height: 50px;
         /* width: 70px; */
-        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    #companySelection li {
+        max-width: 25%;
+    }
+    #companySelection img {
+        max-width: 99%;
+    }
+    #companySelection  img.longLogo{
+        height: 12px;
+        margin-top: 17px;
     }
 }
 

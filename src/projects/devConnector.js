@@ -22,7 +22,7 @@ class DevConnector extends Component {
                         <a href="https://github.com/Mayanr/SocialNetwork" target="_blank" rel="noopener noreferrer"><img alt="https://github.com/Mayanr/SocialNetwork" src={require("../media/icons/github.png")}  height="20px"/></a>
                         {/* <a href="" target="_blank" rel="noopener noreferrer"><img alt="" src={require("../media/icons/new_window.png")} height="20px"/></a> */}
                     </div>
-                    <ul >
+                    <ul>
                         {/* Description:  */}
                         <li>
                         Coming Soon! Not yet live; Code available in Github.<br/>
@@ -30,7 +30,7 @@ class DevConnector extends Component {
 
                         </li>
                         
-                        <li > 
+                        <li> 
                             <p className="functionalities">Noteable Functionalities:</p>
                             <ol>
                                 <li>Github API linked, profile page populating with the latest 5 repos for that profile</li>
@@ -43,10 +43,10 @@ class DevConnector extends Component {
                         <br />
                         {/* Technologies */}
                         <li className="techLogos">
-                            <img alt="React" src={require("../media/tech_logos/react.png")} height="30px"/>
-                            <img alt="Redux" src={require("../media/tech_logos/redux.png")}  height="30px"/>
-                            <img alt="MongoDB" src={require("../media/tech_logos/mongodb.png")} height="55px"/>
-                            <img alt="Github API" src={require("../media/tech_logos/github_api3.png")} title="Github API" height="45px"/>
+                            <img alt="React" src={require("../media/tech_logos/react.png")} height="30px" title="React"/>
+                            <img alt="Redux" src={require("../media/tech_logos/redux.png")}  height="30px" title="Redux"/>
+                            <img alt="MongoDB" src={require("../media/tech_logos/mongodb.png")} height="55px" title="MongoDB"/>
+                            <img alt="Github API" src={require("../media/tech_logos/github_api3.png")} title="Github API" height="45px" title="Github API"/>
                         </li>
                     </ul>
 
