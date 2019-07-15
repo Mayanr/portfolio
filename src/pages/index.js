@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { Helmet } from 'react-helmet';
 
 import Layout from "../components/layout";
 import Projects from "./projects";
@@ -10,17 +11,23 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 class IndexPage extends Component {
     render(){
-        const ieBackgrounds = () =>{
-            // document.getElementById("layout").style.backgroundColor = "rgb(92, 69, 103, 0.25)";
-            // document.getElementById("aboutsection").style.backgroundColor = "rgb(92, 69, 103, 0.2)";
-            // document.getElementById("introsection").style.backgroundColor = "rgb(92, 69, 103, 0.2)";
-            // document.getElementById("footer").style.backgroundColor = "rgb(92, 69, 103, 0.2)";
-        }
-        const backgorundColorSecondary = {
-            backgroundColor:"rgb(92, 69, 103, 0.2)"
-        }
+        // const ieBackgrounds = () =>{
+        //     // document.getElementById("layout").style.backgroundColor = "rgb(92, 69, 103, 0.25)";
+        //     // document.getElementById("aboutsection").style.backgroundColor = "rgb(92, 69, 103, 0.2)";
+        //     // document.getElementById("introsection").style.backgroundColor = "rgb(92, 69, 103, 0.2)";
+        //     // document.getElementById("footer").style.backgroundColor = "rgb(92, 69, 103, 0.2)";
+        // }
+        // const backgorundColorSecondary = {
+        //     backgroundColor:"rgb(92, 69, 103, 0.2)"
+        // }
         return (
             <Layout id="layout" >
+            <Helmet>
+                <title>Mayan's Portfolio</title>
+                <meta name="description" content="This is Mayan Rothstein's portfolio page!" />
+                <meta name="keywords" content="HTML,CSS,Python,JavaScript, developer,coding,portfolio"/>
+                <link rel="icon" href={require("../media/myMedia/MR_logo2_violet.png")}/>
+            </Helmet>
             <div id="mainTitle">
                 <p style={{fontSize: 20+"px"}}>Hello! My name is</p>
                 <h1>Mayan Rothstein</h1> 
@@ -34,7 +41,7 @@ class IndexPage extends Component {
                 <button ><AnchorLink  id="chatLink" href="#contactsection">Let's Chat >></AnchorLink></button>
             </div>
 
-            <div id="aboutsection" className="section" style={{marginTop: 15+"%", backgorundColorSecondary}}>
+            <div id="aboutsection" className="section" style={{marginTop: 15+"%"}}>
                 <div className= "newSec" >
                     <About />
                 </div> 
@@ -46,13 +53,13 @@ class IndexPage extends Component {
             </div>
             </div>  
 
-            <div id="introsection" className="section" style={backgorundColorSecondary}>
+            <div id="introsection" className="section">
                 <div className= "newSec">
                     <Intro className="innerBox"/>
                 </div>
             </div>      
 
-            <div id="contactsection" className="section" onLoad={ieBackgrounds()}>
+            <div id="contactsection" className="section" >
                 <div className= "newSec">
                     <Contact className="innerBox"/>
                 </div> 

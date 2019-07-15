@@ -801,8 +801,9 @@ a.projectLink:hover .clickLink{
     #companySelection img {
         max-width: 99%;
     }
-    #companySelection  img.longLogo{
+    #companySelection img.longLogo{
         height: 12px;
+        max-width: 95%;
         margin-top: 17px;
     }
 }
