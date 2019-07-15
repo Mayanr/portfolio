@@ -19,30 +19,74 @@ class Intro extends Component {
         // document.getElementsByClassName("clickedCompany").style.borderLeft = 0;
         //set all unselected to 
         document.getElementById("RS_logo").style.borderLeft = 0;
+        document.getElementById("RS_logo").style.backgroundColor = "rgb(152, 140, 183, 0.5)";
+
         document.getElementById("PC_logo").style.borderLeft = 0;
+        document.getElementById("PC_logo").style.backgroundColor = "rgb(152, 140, 183, 0.5)";
+
         document.getElementById("Ai_logo").style.borderLeft = 0;
+        document.getElementById("Ai_logo").style.backgroundColor = "rgb(152, 140, 183, 0.5)";
+
+        //set selected
         document.getElementById("TM_logo").style.borderLeft = 2+"px solid #4B2187";
         document.getElementById("TM_logo").style.backgroundColor = " #B5ACC0";
-        // document.getElementById("TM_logo").style.backgroundColor = "#B5ACC0";
+        // document.getElementById("TM_logo").style.width = 198+"px";
     }
     const displayRS = () => {
         document.getElementById("jobDesc").innerHTML = "<h3>Product Marketing</h3><p> Created and edited B2B marketing content (e.g., blogs, white papers, personas, ebooks, articles, and decks).</p>";
         // document.getElementsByClassName("clickedCompany").style.borderLeft = 0;
+        // document.getElementsByClassName("clickedCompany").style.borderLeft = 0;
+
+        //set all unselected to 
+        document.getElementById("TM_logo").style.borderLeft = 0;
+        document.getElementById("TM_logo").style.backgroundColor = "rgb(152, 140, 183, 0.5)";
+
+        document.getElementById("PC_logo").style.borderLeft = 0;
+        document.getElementById("PC_logo").style.backgroundColor = "rgb(152, 140, 183, 0.5)";
+
+        document.getElementById("Ai_logo").style.borderLeft = 0;
+        document.getElementById("Ai_logo").style.backgroundColor = "rgb(152, 140, 183, 0.5)";
+
+        //set selected
         document.getElementById("RS_logo").style.borderLeft =  2+"px solid #4B2187";
         document.getElementById("RS_logo").style.backgroundColor = " #B5ACC0";
-
+        // document.getElementById("RS_logo").style.width = 198+"px";
     }
     const displayPC = () => {
         document.getElementById("jobDesc").innerHTML = "<h3>Marketing Operations</h3><p>Surveyed, researched, and collaborated cross-functionally to strategize effective tactics for campaign implementation to transform over 60,000 global employees into brand ambassadors.</p>";
+
+        //set all unselected to 
+        document.getElementById("TM_logo").style.borderLeft = 0;
+        document.getElementById("TM_logo").style.backgroundColor = "rgb(152, 140, 183, 0.5)";
+
+        document.getElementById("RS_logo").style.borderLeft = 0;
+        document.getElementById("RS_logo").style.backgroundColor = "rgb(152, 140, 183, 0.5)";
+
+        document.getElementById("Ai_logo").style.borderLeft = 0;
+        document.getElementById("Ai_logo").style.backgroundColor = "rgb(152, 140, 183, 0.5)";
+
+        //set selected
         document.getElementById("PC_logo").style.borderLeft =  2+"px solid #4B2187";
         document.getElementById("PC_logo").style.backgroundColor = " #B5ACC0";
-        document.getElementById("RS_logo").style.borderLeft = 0;
+        // document.getElementById("PC_logo").style.width = 198+"px";
     }
     const displayAi = () => {
-        document.getElementById("jobDesc").innerHTML = "<h3>my title</h3><p>Delivered multimedia presentations to generate leads, and evaluated consumer touchpoints to inspire opportunities for brand awareness. Exceeded goals: 111% (visits), 109% (presentations), 118% (interviews), 110% (applications).</p>";
+        document.getElementById("jobDesc").innerHTML = "<h3>Marketing Representative</h3><p>Delivered multimedia presentations to generate leads, and evaluated consumer touchpoints to inspire opportunities for brand awareness. Exceeded goals: 111% (visits), 109% (presentations), 118% (interviews), 110% (applications).</p>";
+
+        //set all unselected to 
+        document.getElementById("TM_logo").style.borderLeft = 0;
+        document.getElementById("TM_logo").style.backgroundColor = "rgb(152, 140, 183, 0.5)";
+
+        document.getElementById("PC_logo").style.borderLeft = 0;
+        document.getElementById("PC_logo").style.backgroundColor = "rgb(152, 140, 183, 0.5)";
+
+        document.getElementById("RS_logo").style.borderLeft = 0;
+        document.getElementById("RS_logo").style.backgroundColor = "rgb(152, 140, 183, 0.5)";
+
+        //set selected
         document.getElementById("Ai_logo").style.borderLeft =  2+"px solid #4B2187";
         document.getElementById("Ai_logo").style.backgroundColor = " #B5ACC0";
-        document.getElementById("RS_logo").style.borderLeft = 0;
+        // document.getElementById("Ai_logo").style.width = 198+"px";   
     }
     return (
         // <div onLoad={e =>TMclickedOnLoad(e)}>

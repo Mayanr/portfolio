@@ -759,26 +759,38 @@ a.projectLink:hover .clickLink{
     vertical-align: middle;
     display: inline-block;
 }
-/* #companySelection li:focus{
-    border-left: 2px solid #4B2187;
-    outline: none;
-    background-color: #B5ACC0;
+#companySelection li:focus{
+    outline:0;
     width: 198px;
-} */
+}
 #companySelection img {
     vertical-align: middle;
     display: inline-block;
-    margin: 0 auto;
+    margin: 10px auto 0;
 }
 #jobDesc {
     background-color:rgb(152, 140, 183, 0.2);
-    padding-left: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 
 @media screen and (max-width: 800px){
     #resume{
         max-width: 200px;
+        margin-top: 10%;
+    }
+    #resumeTable {
+        flex-direction: column;
+    }
+    #companySelection{
+        flex-direction: row;
+        width: 100%;
+    }
+    #companySelection li {
+        height: 50px;
+        /* width: 70px; */
+        width: 100%;
     }
 }
 

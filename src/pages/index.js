@@ -8,6 +8,13 @@ import Intro from "./intro";
 
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
+const backgorundColorPrimary ={
+    backgroundColor:"rgb(92, 69, 103, 0.25)"
+}
+const backgorundColorSecondary = {
+    backgroundColor:"rgb(92, 69, 103, 0.2)"
+}
+
 class IndexPage extends Component {
     render(){
         // const scrollToTop = () => {
@@ -16,7 +23,7 @@ class IndexPage extends Component {
         //     document.getElementById('#top').scrollIntoView();
         // }
         return (
-            <Layout id="top">
+            <Layout id="top" style={backgorundColorPrimary}>
             <div id="mainTitle">
                 <p style={{fontSize: 20+"px"}}>Hello! My name is</p>
                 <h1>Mayan Rothstein</h1> 
@@ -30,7 +37,7 @@ class IndexPage extends Component {
                 <button ><AnchorLink  id="chatLink" href="#contactsection">Let's Chat >></AnchorLink></button>
             </div>
 
-            <div id="aboutsection" className="section" style={{marginTop: 15+"%"}}>
+            <div id="aboutsection" className="section" style={{marginTop: 15+"%", backgorundColorSecondary}}>
                 <div className= "newSec" >
                     <About />
                 </div> 
@@ -42,7 +49,7 @@ class IndexPage extends Component {
             </div>
             </div>  
 
-            <div id="introsection" className="section">
+            <div id="introsection" className="section" style={backgorundColorSecondary}>
                 <div className= "newSec">
                     <Intro className="innerBox"/>
                 </div>

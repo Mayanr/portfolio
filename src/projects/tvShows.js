@@ -31,9 +31,9 @@ class TVShows extends Component {
                         <br />
                         {/* Technologies */}
                         <li className="techLogos">
-                            <img alt="node.js" src={require("../media/tech_logos/nodejs.png")}  height="25px"/>
-                            <img alt="Angular"  src={require("../media/tech_logos/angular.png")} height="35px"/>
-                            <img alt="TV Maze API" src={require("../media/tech_logos/tvm_api.png")}  height="25px"/>
+                            <img alt="Node.js" src={require("../media/tech_logos/nodejs.png")}  height="25px" title="Node.js"/>
+                            <img alt="Angular"  src={require("../media/tech_logos/angular.png")} height="35px" title="Angular"/>
+                            <img alt="TV Maze API" src={require("../media/tech_logos/tvm_api.png")}  height="25px" title="TV Maze API" />
                         </li>
                     </ul>
 

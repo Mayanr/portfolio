@@ -32,9 +32,9 @@ class EcomAdmin extends Component {
                         <br />
                         {/* Technologies */}
                         <li className="techLogos">
-                            <img alt="Python" src={require("../media/tech_logos/python.png")}  height="40px"/>
-                            <img alt="Django" src={require("../media/tech_logos/django.png")}  height="25px"/>
-                            <img alt="SQLite" src={require("../media/tech_logos/sqlite.png")}  height="25px"/>                           <img alt="Jinja" src={require("../media/tech_logos/jinja.png")}  height="30px"/>
+                            <img alt="Python" src={require("../media/tech_logos/python.png")}  height="40px" title="Python"/>
+                            <img alt="Django" src={require("../media/tech_logos/django.png")}  height="25px" title="Django"/>
+                            <img alt="SQLite" src={require("../media/tech_logos/sqlite.png")}  height="25px" title="SQLite"/>                   <img alt="Jinja" src={require("../media/tech_logos/jinja.png")}  height="30px" title="Jinja"/>
                         </li>
                     </ul>
 
