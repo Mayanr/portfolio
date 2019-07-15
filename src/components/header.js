@@ -6,18 +6,18 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 
 const Header = () => {
-    var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-            var currentScrollPos = window.pageYOffset;
-            if(window.innerWidth > 800){
-                if (prevScrollpos > currentScrollPos ) {
-                    document.getElementById("mainNavbar").style.top = "0";
-                } else {
-                    document.getElementById("mainNavbar").style.top = "-70px";
-                }
-            }
-        prevScrollpos = currentScrollPos;
-        } 
+    // var prevScrollpos = window.pageYOffset;
+    //     window.onscroll = function() {
+    //         var currentScrollPos = window.pageYOffset;
+    //         if(window.innerWidth > 800){
+    //             if (prevScrollpos > currentScrollPos ) {
+    //                 document.getElementById("mainNavbar").style.top = "0";
+    //             } else {
+    //                 document.getElementById("mainNavbar").style.top = "-70px";
+    //             }
+    //         }
+    //     prevScrollpos = currentScrollPos;
+    //     } 
 
     const navbar = useRef();
     const i_icon = useRef();

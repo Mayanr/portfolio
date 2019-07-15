@@ -107,7 +107,7 @@ class Intro extends Component {
 
                 <div id="jobDesc" >
                     <h3></h3>
-                    <p></p>
+                    <p>Click on a company for more details</p>
                 </div>
                  
              </div>
