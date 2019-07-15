@@ -9,10 +9,14 @@ import Intro from "./intro";
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 class IndexPage extends Component {
-
     render(){
+        // const scrollToTop = () => {
+        //     window.scrollTo(0,0);
+        //     // window.location("#top");
+        //     document.getElementById('#top').scrollIntoView();
+        // }
         return (
-            <Layout>
+            <Layout id="top">
             <div id="mainTitle">
                 <p style={{fontSize: 20+"px"}}>Hello! My name is</p>
                 <h1>Mayan Rothstein</h1> 
