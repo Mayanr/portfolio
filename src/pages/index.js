@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import { Helmet } from 'react-helmet';
+import ReactGA from 'react-ga';
 
 import Layout from "../components/layout";
 import Projects from "./projects";
@@ -8,6 +9,12 @@ import Contact from "./contact";
 import Intro from "./intro";
 
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+
+function initializeReactGA() {
+    ReactGA.initialize('UA-86430272-3');
+    ReactGA.pageview('/porfolio');
+}
+initializeReactGA();
 
 class IndexPage extends Component {
     render(){
