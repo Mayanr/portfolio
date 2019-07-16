@@ -187,7 +187,7 @@ button:hover {
 /* sidebar links */
 .sidebar {
     position: fixed;
-    right: 0;
+    right: 20px;
     bottom: 10%;
 }
 .sidebar li{
@@ -198,13 +198,13 @@ button:hover {
     text-align: right;
 }
 .sidebar li img {
-    padding-right: 30%;
+    padding-right:10px;
     filter: drop-shadow(7px 7px 1px #988CB7) ;
 }
 .sidebar li img:hover {
-    padding-right: 50%;
-    transition: 0.7s ease-out;
-    -webkit-transition: 0.7s ease-out;
+    padding-right: 70px;
+    transition: 1.5s ease-out;
+    -webkit-transition: 1.5s ease-out;
     filter: invert(100%);
     background-color: #B4DE78;
 }
@@ -752,10 +752,8 @@ a.projectLink:hover .clickLink{
     width: 200px;
 }
 #companySelection li {
-    height: 50px;
-    /* display: table; */
+    height: 75px;
     width: 200px;
-    /* border-left: none; */
     vertical-align: middle;
     display: inline-block;
 }
@@ -764,18 +762,25 @@ a.projectLink:hover .clickLink{
     width: 198px;
 }
 #companySelection img {
-    vertical-align: middle;
-    display: inline-block;
-    margin: 10px auto 0;
+    /* vertical-align: middle;
+    display: inline-block; */
+    margin: 15px auto 0;
+}
+#companySelection img.longLogo{
+    margin-top: 20px;
 }
 #jobDesc {
     background-color:rgb(152, 140, 183, 0.2);
-    padding-left: 10%;
-    padding-right: 10%;
+}
+
+@media screen and (min-width: 1080px){
+    #jobDesc {
+        padding: 3% 8% 0;
+    }
 }
 
 
-@media screen and (max-width: 800px){
+@media screen and (max-width:1080px){
     #resume{
         max-width: 200px;
         margin-top: 10%;
@@ -788,13 +793,16 @@ a.projectLink:hover .clickLink{
         width: 100%;
     }
     #companySelection li {
-        height: 50px;
-        /* width: 70px; */
+        /* height: 50px; */
         max-width: 100%;
+    }
+    #jobDesc {
+        padding:5%;
+        max-height: 300px;
     }
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 800px){
     #companySelection li {
         max-width: 25%;
     }
@@ -802,9 +810,22 @@ a.projectLink:hover .clickLink{
         max-width: 99%;
     }
     #companySelection img.longLogo{
+        height: 15px;
+        /* max-width: 95%; */
+    }
+}
+
+@media screen and (max-width: 600px){
+    #companySelection img.longLogo{
+        height: 15px;
+        margin-top: 23px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    #companySelection img.longLogo{
         height: 12px;
-        max-width: 95%;
-        margin-top: 17px;
+        margin-top: 26px;
     }
 }
 

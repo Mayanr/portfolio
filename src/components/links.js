@@ -18,7 +18,7 @@ const Links = () => {
 
                     <li><a id="email" href="mailto:mayan@bu.edu" className="social_links" target="_blank" rel="noopener noreferrer" title="Link  opens email addressed to me"><img id="mail_logo" alt="mayam@bu.edu" src={require("../media/icons/email.png")} height="20"/></a></li>
 
-                    {/* <li><a id="instagram" href= className="social_links" target="_blank" rel="noopener noreferrer"><img id="IG_logo" alt="https://www.instagram.com/mayanrothstein/" src={require("../media/icons/ig.png")} height="20"/></a></li> */}
+                    {/* <li><a id="instagram" href= className="social_links" target="_blank" rel="noopener noreferrer"><img id="IG_logo" alt="" src={require("../media/icons/ig.png")} height="20"/></a></li> */}
 
                 </ul> 
             </div>
